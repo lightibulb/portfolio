@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Aman Sohail — Developer Portfolio</title>
+  <meta name="description" content="The interactive portfolio of Aman Sohail. Choose your visual experience and step into my digital space." />
+  <meta name="theme-color" content="#08080a" />
+  <meta name="color-scheme" content="dark" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/welcome.css" />
+
+  <!-- Theme system: must run before first paint to prevent a flash of the wrong theme. -->
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+
+  <!-- ───────────────────────────── AMBIENT BACKGROUND ───────────────────────────── -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__orb bg__orb--1"></div>
+    <div class="bg__orb bg__orb--2"></div>
+    <div class="bg__orb bg__orb--3"></div>
+    <span class="bg__shape bg__shape--1"></span>
+    <span class="bg__shape bg__shape--2"></span>
+    <div class="bg__scan"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <div class="flash" id="flash" aria-hidden="true"></div>
+
+  <!-- ───────────────────────────── LOADER ───────────────────────────── -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <p class="loader__mark">AMAN&nbsp;SOHAIL</p>
+      <div class="loader__track"><span class="loader__fill"></span></div>
+      <p class="loader__pct"><span>00</span></p>
+    </div>
+  </div>
+
+  <noscript>
+    <style>.loader{display:none!important}</style>
+  </noscript>
+
+  <!-- ───────────────────────────── PAGE ───────────────────────────── -->
+  <div class="page" id="page">
+
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Aman Sohail — home">
+        <span class="brand__mark">AS</span>
+        <span class="brand__name">Aman Sohail</span>
+      </a>
+      <p class="topbar__meta"><span class="topbar__dot"></span>Portfolio / v1.0</p>
+    </header>
+
+    <main class="stage">
+
+      <section class="intro" aria-labelledby="welcomeTitle">
+        <p class="intro__eyebrow" data-anim>Interface preferences</p>
+        <h1 class="intro__title" id="welcomeTitle" data-anim>Welcome<span class="intro__dot">.</span></h1>
+        <h2 class="intro__sub" data-anim>Choose your experience.</h2>
+        <p class="intro__lede" data-anim>
+          Explore my digital space in a visual environment that feels right to you.
+        </p>
+        <p class="intro__status" id="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="cards" id="cards" aria-label="Theme selection">
+
+        <!-- ── DARK ── -->
+        <button class="card" type="button" data-theme-value="dark"
+                aria-pressed="false"
+                aria-label="Dark theme. Minimalist, refined and professional.">
+          <span class="card__preview" aria-hidden="true">
+            <span class="pv pv--dark">
+              <span class="pv__glyph">Aa</span>
+              <span class="pv__rule"></span>
+              <span class="pv__rule pv__rule--short"></span>
+              <span class="pv__sheen"></span>
+            </span>
+          </span>
+          <span class="card__content">
+            <span class="card__row">
+              <span class="card__name">Dark</span>
+              <span class="card__tick" aria-hidden="true">
+                <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 7.4 5.6 10.5 11.5 4.2" />
+                </svg>
+              </span>
+            </span>
+            <span class="card__desc">Minimalist, focused and refined. Quiet contrast with room to think.</span>
+            <span class="card__meta">Charcoal · Hairline · Calm</span>
+          </span>
+        </button>
+
+        <!-- ── RICH ── -->
+        <button class="card" type="button" data-theme-value="rich"
+                aria-pressed="false"
+                aria-label="Rich theme. Vibrant, expressive and colourful.">
+          <span class="card__preview" aria-hidden="true">
+            <span class="pv pv--rich">
+              <span class="pv__blob pv__blob--a"></span>
+              <span class="pv__blob pv__blob--b"></span>
+              <span class="pv__blob pv__blob--c"></span>
+              <span class="pv__caption">expressive</span>
+            </span>
+          </span>
+          <span class="card__content">
+            <span class="card__row">
+              <span class="card__name">Rich</span>
+              <span class="card__tick" aria-hidden="true">
+                <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 7.4 5.6 10.5 11.5 4.2" />
+                </svg>
+              </span>
+            </span>
+            <span class="card__desc">Vibrant gradients and expressive motion. Colour that carries personality.</span>
+            <span class="card__meta">Gradient · Vivid · Warm</span>
+          </span>
+        </button>
+
+        <!-- ── CYBERPUNK ── -->
+        <button class="card" type="button" data-theme-value="cyberpunk"
+                aria-pressed="false"
+                aria-label="Cyberpunk theme. Neon, futuristic and immersive.">
+          <span class="card__preview" aria-hidden="true">
+            <span class="pv pv--cyber">
+              <span class="pv__code">&gt; init_experience()<span class="pv__cursor"></span></span>
+            </span>
+          </span>
+          <span class="card__content">
+            <span class="card__row">
+              <span class="card__name">Cyberpunk</span>
+              <span class="card__tick" aria-hidden="true">
+                <svg viewBox="0 0 14 14" width="12" height="12" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2.5 7.4 5.6 10.5 11.5 4.2" />
+                </svg>
+              </span>
+            </span>
+            <span class="card__desc">Neon grids, terminal details and deep-space contrast. Immersive and technical.</span>
+            <span class="card__meta">Neon · Grid · Terminal</span>
+          </span>
+        </button>
+
+      </section>
+    </main>
+
+    <footer class="footnote">
+      <p class="footnote__motto">Your experience. Your choice.</p>
+      <p class="footnote__hint">Saved to this device · applied across the portfolio</p>
+    </footer>
+  </div>
+
+  <!-- ───────────────────────────── CONFIRMATION DOCK ───────────────────────────── -->
+  <div class="dock" id="dock" role="region" aria-label="Theme confirmation" hidden>
+    <div class="dock__inner">
+      <div class="dock__info">
+        <span class="dock__check" aria-hidden="true">
+          <svg viewBox="0 0 14 14" width="11" height="11" fill="none" stroke="currentColor"
+               stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 7.4 5.6 10.5 11.5 4.2" />
+          </svg>
+        </span>
+        <div class="dock__text">
+          <p class="dock__title" id="dockTitle">Dark experience selected</p>
+          <p class="dock__sub" id="dockSub">Saved to this device · change it anytime</p>
+        </div>
+      </div>
+      <div class="dock__actions">
+        <button class="btn btn--ghost" id="changeBtn" type="button">Change theme</button>
+        <button class="btn btn--primary" id="enterBtn" type="button">
+          <span>Enter Portfolio</span>
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor"
+               stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h10M9.2 4.2 13 8l-3.8 3.8" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="assets/js/welcome.js" defer></script>
+</body>
+</html>
