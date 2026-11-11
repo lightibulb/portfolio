@@ -29,7 +29,7 @@
                  !!gsapLib &&
                  typeof gsapLib.timeline === 'function';
 
-  var ENTRY_URL = 'home.html';
+  var ENTRY_URL = 'about.html';   /* first inner page; point at home.html once it exists */
 
   var dom = {};
   var state = {
@@ -117,11 +117,18 @@
       }
 
       /* Failsafe: never hold the visitor hostage. */
-      window.setTimeout(finish, 4500);
+      window.setTimeout(finish, 3000);
 
-      if (!motionOK) {
+      /* The full loader plays once per browser session. */
+      var seen = false;
+      try {
+        seen = window.sessionStorage.getItem('amanSohail:loaded') === '1';
+        window.sessionStorage.setItem('amanSohail:loaded', '1');
+      } catch (error) { /* storage unavailable */ }
+
+      if (!motionOK || seen) {
         if (dom.loaderPct) { dom.loaderPct.textContent = '100'; }
-        window.setTimeout(finish, 280);
+        window.setTimeout(finish, seen ? 140 : 280);
         return;
       }
 
@@ -137,21 +144,21 @@
           opacity: 0, scaleX: 0.45, duration: 0.7, ease: 'power3.out'
         }, 0.12)
         .to(dom.loaderFill, {
-          scaleX: 1, duration: 0.95, ease: 'power2.inOut'
-        }, 0.18)
+          scaleX: 1, duration: 0.8, ease: 'power2.inOut'
+        }, 0.15)
         .to(counter, {
           value: 100,
-          duration: 0.95,
+          duration: 0.8,
           ease: 'power2.inOut',
           onUpdate: function () {
             if (dom.loaderPct) {
               dom.loaderPct.textContent = pad(Math.round(counter.value));
             }
           }
-        }, 0.18)
+        }, 0.15)
         .to('.loader__inner', {
-          opacity: 0, y: -10, duration: 0.42, ease: 'power2.in'
-        }, '+=0.12')
+          opacity: 0, y: -10, duration: 0.36, ease: 'power2.in'
+        }, '+=0.05')
         .to(loader, {
           opacity: 0, duration: 0.5, ease: 'power2.inOut'
         }, '-=0.2');
@@ -163,29 +170,36 @@
   /* ---------------------------------------------------------------------- */
 
   function reveal() {
-    if (!motionOK) {
-      document.body.classList.remove('is-booting');
-      return;
-    }
+    return new Promise(function (resolve) {
+      if (!motionOK) {
+        document.body.classList.remove('is-booting');
+        resolve();
+        return;
+      }
+      runReveal(resolve);
+    });
+  }
 
+  function runReveal(done) {
     var timeline = gsapLib.timeline({
       defaults: { ease: 'power3.out' },
       onComplete: function () {
         document.body.classList.remove('is-booting');
         gsapLib.set('.topbar, .intro [data-anim], .card, .footnote', {
-          clearProps: 'opacity,transform'
+          clearProps: 'opacity,transform,willChange'
         });
+        done();
       }
     });
 
     timeline
       .from('.topbar', { y: -14, opacity: 0, duration: 0.8 }, 0)
       .from('.intro [data-anim]', {
-        y: 26, opacity: 0, duration: 0.95, stagger: 0.09
-      }, 0.14)
+        y: 26, opacity: 0, duration: 0.9, stagger: 0.08
+      }, 0.1)
       .from('.card', {
-        y: 40, opacity: 0, duration: 0.9, stagger: 0.09
-      }, 0.42)
+        y: 36, opacity: 0, duration: 0.85, stagger: 0.08
+      }, 0.36)
       .from('.footnote', { opacity: 0, duration: 0.8 }, 0.78);
   }
 
@@ -243,7 +257,7 @@
       dom.flash.style.setProperty('--fy', fy.toFixed(2) + '%');
 
       gsapLib.fromTo(dom.flash, { opacity: 0 }, {
-        opacity: 0.42,
+        opacity: 0.26,
         duration: 0.32,
         ease: 'power2.out',
         onComplete: function () {
@@ -254,17 +268,12 @@
       });
     }
 
-    gsapLib.fromTo(card, { scale: 1 }, {
-      scale: 1.025,
-      duration: 0.32,
-      ease: 'power2.out',
-      yoyo: true,
-      repeat: 1,
-      transformOrigin: '50% 50%',
-      onComplete: function () {
-        gsapLib.set(card, { clearProps: 'transform' });
-      }
-    });
+    /* CSS `scale` composes with the card's own transform, so there is no
+       snap when the animation ends. */
+    card.classList.remove('is-blooming');
+    void card.offsetWidth;
+    card.classList.add('is-blooming');
+    window.setTimeout(function () { card.classList.remove('is-blooming'); }, 700);
   }
 
   function updateStatus(name, returning) {
@@ -364,18 +373,14 @@
 
       updateStatus(null);
 
-      if (motionOK) {
-        gsapLib.fromTo(dom.cards, { y: 0 }, {
-          y: -7,
-          duration: 0.34,
-          stagger: 0.05,
-          yoyo: true,
-          repeat: 1,
-          ease: 'power2.inOut',
-          onComplete: function () {
-            gsapLib.set(dom.cards, { clearProps: 'transform' });
-          }
-        });
+      if (motionOK && dom.cardsWrap) {
+        dom.cards.forEach(function (card, i) { card.style.setProperty('--i', i); });
+        dom.cardsWrap.classList.remove('is-nudging');
+        void dom.cardsWrap.offsetWidth;
+        dom.cardsWrap.classList.add('is-nudging');
+        window.setTimeout(function () {
+          dom.cardsWrap.classList.remove('is-nudging');
+        }, 1000);
       }
 
       var focused = null;
@@ -488,18 +493,14 @@
     var saved = Theme.get();
     var isReturning = !!saved;
 
-    runLoader().then(function () {
-      reveal();
-
+    runLoader().then(reveal).then(function () {
       if (isReturning) {
         /* Restore the previous choice without re-prompting the visitor. */
-        window.setTimeout(function () {
-          selectTheme(saved, {
-            silent: true,
-            force: true,
-            returning: true
-          });
-        }, motionOK ? 620 : 0);
+        selectTheme(saved, {
+          silent: true,
+          force: true,
+          returning: true
+        });
       }
     });
   }

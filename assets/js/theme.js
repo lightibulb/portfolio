@@ -5,6 +5,11 @@
    Shared theme system. Loaded in <head> on every page so the persisted
    theme is applied to <html data-theme="..."> before first paint.
 
+   Also performs the two tiny <html> class updates every page needs before
+   first paint, so pages don't need an inline script:
+     - no-js  → js          (CSS can hide [data-reveal] only when JS runs)
+     - adds    no-motion    when the visitor prefers reduced motion
+
    Public API (window.PortfolioTheme):
      .KEY                 storage key used for persistence
      .ATTRIBUTE           attribute applied to <html>
@@ -22,6 +27,18 @@
 (function (window, document) {
   'use strict';
 
+  /* Pre-paint <html> flags. */
+  (function () {
+    var root = document.documentElement;
+    root.className = root.className.replace(/\bno-js\b/, 'js');
+    if (!/\bjs\b/.test(root.className)) { root.className += ' js'; }
+    try {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        root.className += ' no-motion';
+      }
+    } catch (error) { /* matchMedia unavailable */ }
+  })();
+
   var STORAGE_KEY = 'amanSohail:theme';
   var ATTRIBUTE = 'data-theme';
 
@@ -33,13 +50,13 @@
     },
     rich: {
       label: 'Rich',
-      color: '#150b26',
-      description: 'Vibrant, expressive and colourful.'
+      color: '#12072b',
+      description: 'Royal purple and polished gold. Regal and authoritative.'
     },
     cyberpunk: {
       label: 'Cyberpunk',
-      color: '#04060f',
-      description: 'Neon, futuristic and immersive.'
+      color: '#07040f',
+      description: 'Neon-noir. Acid yellow, hot magenta and electric cyan.'
     }
   };
 
