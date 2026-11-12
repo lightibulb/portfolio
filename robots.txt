@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace with your real site address, then submit it in Google Search Console.
-Sitemap: https://YOUR-SITE-URL/sitemap.xml
+Sitemap: https://lightibulb.github.io/portfolio/sitemap.xml

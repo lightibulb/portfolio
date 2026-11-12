@@ -542,6 +542,18 @@ html.no-motion :is([data-reveal], [data-reveal-group] > *) {
 
 .hero__dot { color: var(--accent); }
 
+/* fix2-A: .hero__sub — secondary heading (was only in skills.css) */
+.hero__sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: clamp(1rem, 2vw, 1.4rem);
+  animation: fadeRise 1s var(--ease-out-expo) 0.5s both;
+}
+
 .hero__lede {
   max-width: 44ch;
   font-size: clamp(1rem, 1.4vw, 1.12rem);
