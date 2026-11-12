@@ -513,6 +513,14 @@ html[data-theme="cyberpunk"] .skill__level[data-level="intermediate"] {
   box-shadow: 0 0 12px -3px currentColor;
 }
 
+/* fix#7: distinct intermediate tag on cyberpunk (yellow on yellow was invisible) */
+html[data-theme="cyberpunk"] .skill__level[data-level="intermediate"] {
+  color: var(--accent-3);
+  border-color: var(--accent-3);
+  background: transparent;
+  box-shadow: 0 0 10px -2px var(--accent-3);
+}
+
 
 /* --------------------------------------------------------------------------
    8. RESPONSIVE

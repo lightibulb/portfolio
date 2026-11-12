@@ -427,6 +427,11 @@ html[data-theme="cyberpunk"] .interest__title {
   background: linear-gradient(160deg, var(--surface-hover), var(--surface));
 }
 
+/* fix#4: keep gradient identity on hover; flat --surface-hover would erase it */
+.journey__card--featured:hover {
+  background: linear-gradient(160deg, var(--surface), var(--surface-hover));
+}
+
 html[data-theme="cyberpunk"] .journey__title {
   font-family: var(--font-mono);
   font-size: 1rem;
@@ -508,4 +513,9 @@ html[data-theme="rich"] .journey__title { letter-spacing: 0; }
   .journey__grid { grid-template-columns: 1fr; }
   .journey__card:last-child { grid-column: auto; }
   .who__body p:first-of-type::first-letter { font-size: 3.4em; }
+}
+
+/* fix#10: give the drop cap time to settle before the fade completes */
+html.js:not(.no-motion) .who__body p:first-of-type:not(.reveal-done) {
+  transition-duration: 1.1s;
 }

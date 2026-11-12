@@ -1,0 +1,516 @@
+/* ==========================================================================
+   Aman Sohail — Portfolio
+   assets/css/about.css
+   --------------------------------------------------------------------------
+   About-page sections only. Shared layout, navigation, hero, buttons and
+   footer are in site.css; colours are in themes.css.
+
+   1. Who I am
+   2. Approach
+   3. Interests
+   4. Journey
+   5. Theme flourishes
+   6. Responsive
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. WHO I AM
+   -------------------------------------------------------------------------- */
+
+.who {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: start;
+}
+
+.who__aside {
+  position: sticky;
+  top: 100px;
+}
+
+.who__portrait {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--r-card) / 3);
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color 0.5s var(--ease), background 0.5s var(--ease);
+}
+
+.who__portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 20%, var(--accent-soft) 0%, transparent 55%),
+    radial-gradient(circle at 75% 80%, var(--accent-soft) 0%, transparent 55%);
+  opacity: 0.6;
+}
+
+.who__portrait::after {
+  content: "AMAN";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: 0.08em;
+  color: var(--text);
+  opacity: 0.12;
+  transition: color 0.6s var(--ease);
+}
+
+.who__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.who__body p {
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.75;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+.who__body p + p { margin-top: 1.4rem; }
+
+.who__body p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 4.2em;
+  line-height: 0.82;
+  padding: 0.05em 0.14em 0 0;
+  color: var(--accent);
+  transition: color 0.6s var(--ease);
+}
+
+.who__body em {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--text);
+  transition: color 0.6s var(--ease);
+}
+
+.who__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--rule);
+}
+
+.who__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  transition: color 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+
+.who__tag:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+/* --------------------------------------------------------------------------
+   2. APPROACH
+   -------------------------------------------------------------------------- */
+
+.approach {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  background: var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  transition: border-color 0.5s var(--ease), background 0.5s var(--ease);
+}
+
+.approach__card {
+  position: relative;
+  padding: clamp(1.6rem, 3.2vw, 2.6rem);
+  background: var(--bg);
+  cursor: default;
+  transition: background-color 0.5s var(--ease), transform 0.5s var(--ease);
+}
+
+.approach__card:hover {
+  background: var(--surface-hover);
+}
+
+.approach__card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.6s var(--ease), background 0.5s var(--ease);
+}
+
+.approach__card:hover::after { transform: scaleX(1); }
+
+.approach__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.approach__num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--text-faint);
+  transition: color 0.6s var(--ease);
+}
+
+.approach__icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-dim);
+  transition: color 0.5s var(--ease), border-color 0.5s var(--ease),
+              transform 0.5s var(--ease), background 0.5s var(--ease);
+}
+
+.approach__card:hover .approach__icon {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  transform: rotate(-6deg);
+}
+
+.approach__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.7rem;
+  transition: color 0.6s var(--ease);
+}
+
+.approach__desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+html[data-theme="cyberpunk"] .approach__title {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   3. INTERESTS
+   -------------------------------------------------------------------------- */
+
+.interests__intro {
+  max-width: 56ch;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(0.98rem, 1.3vw, 1.05rem);
+  line-height: 1.7;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+.interests__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+  background: var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  transition: border-color 0.5s var(--ease), background 0.5s var(--ease);
+}
+
+.interest {
+  position: relative;
+  padding: clamp(1.4rem, 2.6vw, 2.1rem);
+  background: var(--bg);
+  transition: background-color 0.5s var(--ease);
+}
+
+.interest:hover { background: var(--surface-hover); }
+
+.interest__index {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  color: var(--text-faint);
+  margin-bottom: 2rem;
+  transition: color 0.6s var(--ease);
+}
+
+.interest__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.35rem, 2.1vw, 1.75rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+  transition: color 0.6s var(--ease);
+}
+
+.interest__desc {
+  font-size: 0.87rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+.interest__marker {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.4rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease),
+              background 0.6s var(--ease);
+}
+
+.interest:hover .interest__marker {
+  opacity: 1;
+  transform: scale(1);
+}
+
+html[data-theme="cyberpunk"] .interest__title {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   4. JOURNEY
+   -------------------------------------------------------------------------- */
+
+.journey__lede {
+  max-width: 62ch;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1rem, 1.3vw, 1.08rem);
+  line-height: 1.75;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+.journey__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.9rem, 1.6vw, 1.4rem);
+}
+
+.journey__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: clamp(1.4rem, 2.4vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.5s var(--ease), border-color 0.5s var(--ease),
+              background 0.5s var(--ease), box-shadow 0.5s var(--ease);
+}
+
+.journey__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+  box-shadow: var(--lift-shadow);
+}
+
+.journey__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  transition: color 0.6s var(--ease);
+}
+
+.journey__tag::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: background 0.6s var(--ease);
+}
+
+.journey__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  transition: color 0.6s var(--ease);
+}
+
+.journey__desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+  transition: color 0.6s var(--ease);
+}
+
+.journey__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: color 0.4s var(--ease), border-color 0.5s var(--ease);
+}
+
+.journey__link svg {
+  transition: transform 0.4s var(--ease);
+}
+
+.journey__card:hover .journey__link { color: var(--accent); }
+.journey__card:hover .journey__link svg { transform: translate(3px, -3px); }
+
+.journey__card--featured {
+  background: linear-gradient(160deg, var(--surface-hover), var(--surface));
+}
+
+/* fix#4: keep gradient identity on hover; flat --surface-hover would erase it */
+.journey__card--featured:hover {
+  background: linear-gradient(160deg, var(--surface), var(--surface-hover));
+}
+
+html[data-theme="cyberpunk"] .journey__title {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+html[data-theme="cyberpunk"] .journey__card {
+  box-shadow: 0 0 0 1px rgba(5, 217, 232, 0.08), inset 0 0 60px rgba(5, 217, 232, 0.03);
+}
+
+html[data-theme="cyberpunk"] .journey__card:hover {
+  box-shadow: var(--lift-shadow), inset 0 0 60px rgba(5, 217, 232, 0.06);
+}
+
+/* --------------------------------------------------------------------------
+   5. THEME FLOURISHES
+   -------------------------------------------------------------------------- */
+
+html[data-theme="rich"] .who__portrait {
+  border-color: var(--border-strong);
+  box-shadow: inset 0 0 0 5px var(--bg), inset 0 0 0 6px var(--border);
+}
+
+html[data-theme="rich"] .who__portrait::after {
+  background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  opacity: 0.55;
+}
+
+html[data-theme="cyberpunk"] .who__portrait {
+  border-color: var(--border-strong);
+  box-shadow: 0 0 24px -8px rgba(5, 217, 232, 0.5);
+}
+
+html[data-theme="cyberpunk"] .who__portrait::after {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  opacity: 0.35;
+  text-shadow: 2px 0 var(--accent-2), -2px 0 var(--accent-3);
+}
+
+html[data-theme="cyberpunk"] .who__caption { color: var(--accent-3); }
+html[data-theme="cyberpunk"] .who__body em { font-family: var(--font-mono); font-style: normal; color: var(--accent-3); font-size: 0.92em; }
+html[data-theme="cyberpunk"] .who__tag { color: var(--accent-3); border-color: var(--border); }
+html[data-theme="cyberpunk"] .interest:hover,
+html[data-theme="cyberpunk"] .approach__card:hover { box-shadow: inset 0 0 40px rgba(5, 217, 232, 0.07); }
+html[data-theme="cyberpunk"] .interest__marker { box-shadow: 0 0 10px var(--accent); }
+html[data-theme="cyberpunk"] .approach__num,
+html[data-theme="cyberpunk"] .interest__index,
+html[data-theme="cyberpunk"] .journey__tag { color: var(--accent-3); }
+
+html[data-theme="rich"] .approach,
+html[data-theme="rich"] .interests__grid { box-shadow: 0 30px 80px -50px rgba(88, 40, 190, 0.9); }
+html[data-theme="rich"] .interest__title,
+html[data-theme="rich"] .approach__title,
+html[data-theme="rich"] .journey__title { letter-spacing: 0; }
+
+
+/* --------------------------------------------------------------------------
+   6. RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 960px) {
+  .who { grid-template-columns: 1fr; }
+  .who__aside { position: static; max-width: 260px; }
+  .interests__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .journey__grid { grid-template-columns: 1fr 1fr; }
+  .journey__card:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 640px) {
+  .approach,
+  .interests__grid,
+  .journey__grid { grid-template-columns: 1fr; }
+  .journey__card:last-child { grid-column: auto; }
+  .who__body p:first-of-type::first-letter { font-size: 3.4em; }
+}

@@ -30,11 +30,15 @@
   /* Pre-paint <html> flags. */
   (function () {
     var root = document.documentElement;
-    root.className = root.className.replace(/\bno-js\b/, 'js');
-    if (!/\bjs\b/.test(root.className)) { root.className += ' js'; }
+    /* fix#9: strict word-boundary regex; guarded class additions */
+    root.className = root.className.replace(/(^|\s)no-js(?=\s|$)/, '$1js');
+    if (!/(^|\s)js(?=\s|$)/.test(root.className)) {
+      root.className = (root.className ? root.className + ' ' : '') + 'js';
+    }
     try {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        root.className += ' no-motion';
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+          !/(^|\s)no-motion(?=\s|$)/.test(root.className)) {
+        root.className = (root.className ? root.className + ' ' : '') + 'no-motion';
       }
     } catch (error) { /* matchMedia unavailable */ }
   })();

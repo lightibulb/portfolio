@@ -46,7 +46,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
   transition: background-color 0.7s var(--ease), color 0.7s var(--ease);
 }
 
@@ -442,6 +442,8 @@ html.js:not(.no-motion) :is([data-reveal], [data-reveal-group] > *):not(.reveal-
 html.js:not(.no-motion) :is([data-reveal], [data-reveal-group] > *):not(.is-revealed):not(.reveal-done) {
   opacity: 0;
   transform: translate3d(0, 26px, 0);
+  /* fix#6: prevent interaction with invisible, unrevealed elements */
+  pointer-events: none;
 }
 
 html.no-js :is([data-reveal], [data-reveal-group] > *),
@@ -521,8 +523,8 @@ html.no-motion :is([data-reveal], [data-reveal-group] > *) {
 .hero__line {
   display: block;
   overflow: hidden;
-  padding: 0.04em 0.08em 0.16em 0;
-  margin: 0 0 -0.12em;
+  padding: 0.04em 0.08em 0.20em 0;
+  margin: 0 0 -0.16em;
 }
 
 .hero__line > span {

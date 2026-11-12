@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Contact — Aman Sohail</title>
+  <meta name="description" content="Contact Aman Sohail — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
+  <meta name="keywords" content="Aman Sohail contact, Aman Sohail email, Aman Sohail WhatsApp, Aman Sohail LinkedIn, Aman Sohail GitHub, lightibulb, contact developer Pakistan" />
+  <meta name="author" content="Aman Sohail" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aman Sohail" />
+  <meta property="og:title" content="Contact — Aman Sohail" />
+  <meta property="og:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact — Aman Sohail" />
+  <meta name="twitter:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/themes.css" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+
+  <script src="assets/js/theme.js"></script>
+
+  <style>
+/* ==========================================================================
+   Contact page — page-specific styles
+   Everything shared (nav, hero scaffold, section scaffold, buttons, footer,
+   reveal system, mobile menu, theme switcher) is in site.css / themes.css.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. HERO — floating communication glyphs
+   -------------------------------------------------------------------------- */
+
+.hero__float {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__float-item {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size, 22px);
+  height: var(--size, 22px);
+  color: var(--text-faint);
+  opacity: 0.22;
+  animation: floatDrift var(--dur, 12s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+.hero__float-item svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html[data-theme="cyberpunk"] .hero__float-item {
+  color: var(--accent-3);
+  opacity: 0.28;
+  filter: drop-shadow(0 0 6px var(--accent-3));
+}
+
+html[data-theme="rich"] .hero__float-item {
+  color: var(--accent);
+  opacity: 0.32;
+}
+
+@keyframes floatDrift {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
+  25%      { transform: translate3d(8px, -14px, 0) rotate(6deg); }
+  50%      { transform: translate3d(-4px, -22px, 0) rotate(-3deg); }
+  75%      { transform: translate3d(-12px, -8px, 0) rotate(4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__float-item { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   2. CONTACT CARD GRID
+   -------------------------------------------------------------------------- */
+
+.contacts {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(0.7rem, 1.4vw, 1rem);
+}
+
+.contact-card {
+  --brand: var(--accent);
+  --brand-glow: var(--accent-soft);
+
+  position: relative;
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.3rem, 2.6vw, 1.8rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  transition:
+    transform 0.4s var(--ease),
+    border-color 0.4s var(--ease),
+    background-color 0.4s var(--ease),
+    box-shadow 0.5s var(--ease);
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 0%,
+    var(--brand-glow) 0%,
+    transparent 55%
+  );
+  opacity: 0;
+  transition: opacity 0.5s var(--ease);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand);
+  box-shadow: 0 24px 50px -30px var(--brand);
+}
+
+.contact-card:hover::before {
+  opacity: 0.6;
+}
+
+.contact-card--linkedin,
+.contact-card--github,
+.contact-card--instagram {
+  grid-column: span 2;
+}
+
+/* Brand accents */
+.contact-card--email      { --brand: var(--accent); --brand-glow: var(--accent-soft); }
+.contact-card--whatsapp   { --brand: #25d366;       --brand-glow: rgba(37, 211, 102, 0.14); }
+.contact-card--linkedin   { --brand: #0a66c2;       --brand-glow: rgba(10, 102, 194, 0.16); }
+.contact-card--github     { --brand: var(--text);   --brand-glow: rgba(255, 255, 255, 0.08); }
+.contact-card--instagram  { --brand: #d946a0;       --brand-glow: rgba(217, 70, 160, 0.16); }
+
+.contact-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact-card__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--brand);
+  flex: 0 0 auto;
+  transition: background-color 0.4s var(--ease),
+              border-color 0.4s var(--ease),
+              transform 0.4s var(--ease);
+}
+
+.contact-card:hover .contact-card__icon {
+  background: var(--brand-glow);
+  border-color: var(--brand);
+  transform: rotate(-4deg);
+}
+
+.contact-card__icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.contact-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding: 0.22rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  white-space: nowrap;
+}
+
+.contact-card__tag--primary {
+  color: var(--brand);
+  border-color: var(--brand);
+  background: var(--brand-glow);
+}
+
+.contact-card__name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.2vw, 1.7rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.contact-card__desc {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.contact-card__action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+}
+
+.contact-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--r-btn);
+  cursor: pointer;
+  transition: color 0.3s var(--ease),
+              border-color 0.3s var(--ease),
+              background-color 0.3s var(--ease);
+}
+
+.contact-card__btn:hover {
+  color: var(--accent-contrast);
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.contact-card__btn svg {
+  width: 11px;
+  height: 11px;
+  transition: transform 0.3s var(--ease);
+}
+
+.contact-card__btn:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.contact-card__btn--copy:hover svg {
+  transform: none;
+}
+
+.contact-card__btn--copy.is-copied {
+  color: #22c55e;
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.contact-card__email {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  word-break: break-all;
+  margin-bottom: 0.3rem;
+}
+
+/* --------------------------------------------------------------------------
+   3. FORM
+   -------------------------------------------------------------------------- */
+
+.form-note {
+  max-width: 68ch;
+  margin-bottom: clamp(1.4rem, 3vw, 2rem);
+  padding: 0.9rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+  background: var(--surface);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-btn) var(--r-btn) 0;
+}
+
+.form-note strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 2vw, 1.4rem);
+  max-width: 760px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row--full {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.form-label__req {
+  color: var(--accent);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.7rem 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: border-color 0.3s var(--ease);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-faint);
+  opacity: 0.7;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+  box-shadow: 0 1px 0 0 var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+  padding: 0.7rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-btn);
+}
+
+.form-textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.form-input[aria-invalid="true"],
+.form-textarea[aria-invalid="true"] {
+  border-color: #ef4444;
+  box-shadow: none;
+}
+
+.form-input[aria-invalid="true"]:focus,
+.form-textarea[aria-invalid="true"]:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.18);
+}
+
+.form-hint {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.form-error {
+  display: none;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #ef4444;
+}
+
+.form-row.has-error .form-error {
+  display: block;
+}
+
+.form-footer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-btn);
+  cursor: pointer;
+  transition: transform 0.3s var(--ease),
+              box-shadow 0.4s var(--ease),
+              background-color 0.4s var(--ease);
+}
+
+.form-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--btn-glow);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-submit svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.35s var(--ease);
+}
+
+.form-submit:hover:not(:disabled) svg {
+  transform: translateX(3px);
+}
+
+.form-status {
+  display: none;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: var(--r-btn);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.form-status[data-state="success"] {
+  display: flex;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.08);
+  border-left: 2px solid #22c55e;
+}
+
+.form-status[data-state="error"] {
+  display: flex;
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+  border-left: 2px solid #ef4444;
+}
+
+.form-status__title {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: currentColor;
+}
+
+.form-status__body {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+}
+
+.form-status__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.form-status__actions .contact-card__btn {
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-card::before { transition: none; }
+  .contact-card:hover .contact-card__icon { transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   4. TOPICS
+   -------------------------------------------------------------------------- */
+
+.topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.topic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: clamp(1.3rem, 2.6vw, 1.9rem);
+  background: var(--bg);
+  transition: background-color 0.4s var(--ease);
+}
+
+.topic:hover {
+  background: var(--surface-hover);
+}
+
+.topic__num {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.topic__icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  transition: transform 0.4s var(--ease), background-color 0.4s var(--ease);
+}
+
+.topic:hover .topic__icon {
+  transform: scale(1.08) rotate(-6deg);
+}
+
+.topic__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.topic__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.topic__desc {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+/* --------------------------------------------------------------------------
+   5. AVAILABILITY
+   -------------------------------------------------------------------------- */
+
+.availability {
+  padding: clamp(1.6rem, 3.4vw, 2.4rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(1rem, 2.4vw, 1.6rem);
+}
+
+.availability__dot {
+  position: relative;
+  flex: 0 0 auto;
+  width: 10px;
+  height: 10px;
+  margin-top: 0.45rem;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.15);
+  animation: availabilityPulse 2.6s var(--ease-soft) infinite;
+}
+
+@keyframes availabilityPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0.06);
+  }
+}
+
+.availability__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.availability__title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.availability__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .availability__dot { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   6. CLOSING BUTTONS — narrower than default, arranged in a row
+   -------------------------------------------------------------------------- */
+
+.closing__actions--contact {
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. FOOTER — enhanced, with social links + dynamic year
+   -------------------------------------------------------------------------- */
+
+.footer--contact {
+  padding: clamp(2rem, 4vw, 3rem) var(--pad-x) 1.6rem;
+  border-top: 1px solid var(--rule);
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: clamp(1.6rem, 4vw, 3rem);
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-bottom: clamp(1.6rem, 3vw, 2.4rem);
+  border-bottom: 1px solid var(--rule);
+}
+
+.footer-col__brand {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.footer-col__tag {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.9rem;
+}
+
+.footer-col__motto {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-dim);
+}
+
+.footer-col__label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.8rem;
+}
+
+.footer-col__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-col__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  color: var(--text-dim);
+  transition: color 0.3s var(--ease);
+}
+
+.footer-col__link:hover {
+  color: var(--text);
+}
+
+.footer-col__link svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s var(--ease);
+}
+
+.footer-col__link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-top: 1.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.footer-bottom a {
+  color: inherit;
+}
+
+.footer-bottom a:hover {
+  color: var(--text);
+}
+
+/* --------------------------------------------------------------------------
+   8. THEME FLOURISHES
+   -------------------------------------------------------------------------- */
+
+html[data-theme="rich"] .contact-card__name,
+html[data-theme="rich"] .topic__title,
+html[data-theme="rich"] .availability__text {
+  letter-spacing: 0;
+}
+
+html[data-theme="rich"] .contact-card {
+  box-shadow: inset 0 1px 0 rgba(216, 178, 88, 0.12);
+}
+
+html[data-theme="rich"] .contact-card__icon {
+  background: linear-gradient(160deg,
+    rgba(216, 178, 88, 0.15),
+    rgba(108, 56, 224, 0.12));
+}
+
+html[data-theme="cyberpunk"] .contact-card__name,
+html[data-theme="cyberpunk"] .topic__title {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1rem;
+}
+
+html[data-theme="cyberpunk"] .contact-card__desc,
+html[data-theme="cyberpunk"] .topic__desc {
+  font-size: 0.84rem;
+}
+
+html[data-theme="cyberpunk"] .contact-card:hover {
+  box-shadow: 0 0 0 1px var(--brand),
+              0 0 30px -10px var(--brand);
+}
+
+html[data-theme="cyberpunk"] .contact-card__icon {
+  border-color: var(--brand);
+}
+
+html[data-theme="cyberpunk"] .contact-card__btn {
+  font-size: 0.62rem;
+}
+
+html[data-theme="cyberpunk"] .availability {
+  border-color: var(--border-strong);
+  box-shadow: 0 0 0 1px rgba(5, 217, 232, 0.06);
+}
+
+html[data-theme="cyberpunk"] .availability__text {
+  font-family: var(--font-mono);
+  font-style: normal;
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   9. RESPONSIVE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .contacts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-card,
+  .contact-card--linkedin,
+  .contact-card--github,
+  .contact-card--instagram {
+    grid-column: span 1;
+  }
+  .contact-card--email {
+    grid-column: span 2;
+  }
+  .footer-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-cols > :first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 620px) {
+  .contacts {
+    grid-template-columns: 1fr;
+  }
+  .contact-card,
+  .contact-card--email,
+  .contact-card--linkedin,
+  .contact-card--github,
+  .contact-card--instagram {
+    grid-column: span 1;
+  }
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+  .footer-cols {
+    grid-template-columns: 1fr;
+  }
+  .footer-cols > :first-child {
+    grid-column: span 1;
+  }
+  .availability {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .availability__dot { margin-top: 0; }
+}
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__orb bg__orb--1" data-orb></div>
+    <div class="bg__orb bg__orb--2" data-orb></div>
+    <div class="bg__orb bg__orb--3" data-orb></div>
+    <div class="bg__scan"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
+        <span class="nav__mark">AS</span>
+        <span class="nav__name">Aman Sohail</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="skills.html">Skills</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="experience.html">Experience</a></li>
+          <li><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__theme" role="group" aria-label="Choose theme">
+        <button class="nav__theme-btn" data-theme-value="dark" type="button"
+                aria-pressed="false" aria-label="Dark theme" title="Dark"></button>
+        <button class="nav__theme-btn" data-theme-value="rich" type="button"
+                aria-pressed="false" aria-label="Rich theme" title="Rich"></button>
+        <button class="nav__theme-btn" data-theme-value="cyberpunk" type="button"
+                aria-pressed="false" aria-label="Cyberpunk theme" title="Cyberpunk"></button>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+
+      <div class="hero__float" aria-hidden="true">
+        <span class="hero__float-item" style="--x: 8%; --y: 18%; --size: 24px; --dur: 14s; --delay: 0s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+        </span>
+        <span class="hero__float-item" style="--x: 82%; --y: 12%; --size: 20px; --dur: 16s; --delay: 1.4s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </span>
+        <span class="hero__float-item" style="--x: 16%; --y: 72%; --size: 22px; --dur: 18s; --delay: 2.8s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </span>
+        <span class="hero__float-item" style="--x: 76%; --y: 76%; --size: 18px; --dur: 15s; --delay: 0.9s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/>
+          </svg>
+        </span>
+        <span class="hero__float-item" style="--x: 46%; --y: 88%; --size: 16px; --dur: 20s; --delay: 3.2s">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+          </svg>
+        </span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__label">Aman Sohail — Contact</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="sr-only">Let's connect. </span>
+          <span class="hero__line"><span>Let's</span></span>
+          <span class="hero__line"><span>Connect<span class="hero__dot">.</span></span></span>
+        </h1>
+        <p class="hero__sub">Good ideas begin with conversations.</p>
+        <p class="hero__lede">
+          Whether you have a project in mind, an interesting opportunity, a
+          technical question or simply want to connect, I'd be glad to hear from you.
+        </p>
+        <a class="hero__scroll" href="#contact-methods">
+          Get in touch
+          <span class="hero__scroll-track" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACT METHODS ═══════════════════════ -->
+    <section class="section" id="contact-methods" aria-labelledby="methodsTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>01 — Direct</p>
+        <h2 class="section__title" id="methodsTitle" data-reveal>Ways to reach me.</h2>
+      </header>
+
+      <div class="contacts">
+
+        <!-- EMAIL -->
+        <article class="contact-card contact-card--email" data-reveal>
+          <div class="contact-card__head">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="M3 7l9 6 9-6"/>
+              </svg>
+            </span>
+            <span class="contact-card__tag contact-card__tag--primary">Preferred</span>
+          </div>
+
+          <div>
+            <h3 class="contact-card__name">Email</h3>
+            <p class="contact-card__email">amanravian1289@gmail.com</p>
+            <p class="contact-card__desc">
+              The most reliable way to reach me for professional enquiries,
+              collaborations and detailed messages.
+            </p>
+          </div>
+
+          <div class="contact-card__action">
+            <a class="contact-card__btn" href="mailto:amanravian1289@gmail.com">
+              Send email
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11 11 3M5 3h6v6"/>
+              </svg>
+            </a>
+            <button class="contact-card__btn contact-card__btn--copy" type="button"
+                    data-copy="amanravian1289@gmail.com"
+                    aria-label="Copy email address">
+              Copy address
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="4" y="4" width="8" height="8" rx="1"/>
+                <path d="M2 10V3a1 1 0 0 1 1-1h7"/>
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- WHATSAPP -->
+        <article class="contact-card contact-card--whatsapp" data-reveal>
+          <div class="contact-card__head">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57a1.1 1.1 0 0 0-.8.37c-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.72.23 1.37.2 1.88.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7 9.89 9.89 0 0 1-9.89 9.88M20.5 3.49A11.79 11.79 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89a11.83 11.83 0 0 0 1.58 5.95L0 24l6.31-1.65a11.9 11.9 0 0 0 5.73 1.46h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.49-8.43"/>
+              </svg>
+            </span>
+            <span class="contact-card__tag">Direct</span>
+          </div>
+
+          <div>
+            <h3 class="contact-card__name">WhatsApp</h3>
+            <p class="contact-card__desc">
+              Connect with me directly through WhatsApp.
+            </p>
+          </div>
+
+          <div class="contact-card__action">
+            <a class="contact-card__btn"
+               href="https://wa.me/923427473993"
+               target="_blank" rel="noopener noreferrer">
+              Message on WhatsApp
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11 11 3M5 3h6v6"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- LINKEDIN -->
+        <article class="contact-card contact-card--linkedin" data-reveal>
+          <div class="contact-card__head">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 class="contact-card__name">LinkedIn</h3>
+            <p class="contact-card__desc">
+              Professional networking and career connections.
+            </p>
+          </div>
+          <div class="contact-card__action">
+            <a class="contact-card__btn"
+               href="https://pk.linkedin.com/in/aman-sohail-485b75421"
+               target="_blank" rel="noopener noreferrer">
+              Open profile
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11 11 3M5 3h6v6"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- GITHUB -->
+        <article class="contact-card contact-card--github" data-reveal>
+          <div class="contact-card__head">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.4-1.8-1.4-1.8-1-.7 0-.7 0-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.5.1-3 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.5.2 2.6.1 3 .8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/>
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 class="contact-card__name">GitHub</h3>
+            <p class="contact-card__desc">
+              Explore my repositories, open-source work and development projects.
+            </p>
+          </div>
+          <div class="contact-card__action">
+            <a class="contact-card__btn"
+               href="https://github.com/lightibulb"
+               target="_blank" rel="noopener noreferrer">
+              View profile
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11 11 3M5 3h6v6"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- INSTAGRAM -->
+        <article class="contact-card contact-card--instagram" data-reveal>
+          <div class="contact-card__head">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.16c3.2 0 3.58 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.16 15.58 2.16 15.2 2.16 12s0-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92C8.42 2.16 8.8 2.16 12 2.16M12 0C8.74 0 8.33 0 7.05.07 2.7.27.27 2.69.07 7.05 0 8.33 0 8.74 0 12s0 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 24 8.74 24 12 24s3.67 0 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98C24 15.67 24 15.26 24 12s0-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67 0 15.26 0 12 0m0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4m6.4-11.44a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44"/>
+              </svg>
+            </span>
+          </div>
+          <div>
+            <h3 class="contact-card__name">Instagram</h3>
+            <p class="contact-card__desc">
+              Find me on Instagram — <strong>@p.aman21</strong>.
+            </p>
+          </div>
+          <div class="contact-card__action">
+            <a class="contact-card__btn"
+               href="https://instagram.com/p.aman21"
+               target="_blank" rel="noopener noreferrer">
+              Open profile
+              <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 11 11 3M5 3h6v6"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ FORM ═══════════════════════ -->
+    <section class="section" id="form-section" aria-labelledby="formTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>02 — Message</p>
+        <h2 class="section__title" id="formTitle" data-reveal>Send a message.</h2>
+      </header>
+
+      <p class="form-note" data-reveal>
+        <strong>How this works —</strong> submitting this form opens your email
+        application with the message prefilled. Nothing is sent to or stored on
+        this website.
+      </p>
+
+      <form class="contact-form" id="contactForm"
+            action="mailto:amanravian1289@gmail.com" method="post" enctype="text/plain"
+            data-reveal>
+
+        <div class="form-row">
+          <label class="form-label" for="field-name">
+            Full name<span class="form-label__req" aria-hidden="true">*</span>
+          </label>
+          <input class="form-input" id="field-name" name="name" type="text"
+                 required autocomplete="name" placeholder="Your name" />
+          <span class="form-error" id="err-name" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <label class="form-label" for="field-email">
+            Email<span class="form-label__req" aria-hidden="true">*</span>
+          </label>
+          <input class="form-input" id="field-email" name="email" type="email"
+                 required autocomplete="email" placeholder="you@example.com" />
+          <span class="form-error" id="err-email" role="alert"></span>
+        </div>
+
+        <div class="form-row form-row--full">
+          <label class="form-label" for="field-subject">
+            Subject<span class="form-label__req" aria-hidden="true">*</span>
+          </label>
+          <input class="form-input" id="field-subject" name="subject" type="text"
+                 required placeholder="What's this about?" />
+          <span class="form-error" id="err-subject" role="alert"></span>
+        </div>
+
+        <div class="form-row form-row--full">
+          <label class="form-label" for="field-message">
+            Message<span class="form-label__req" aria-hidden="true">*</span>
+          </label>
+          <textarea class="form-textarea" id="field-message" name="message"
+                    required minlength="20" maxlength="2000"
+                    placeholder="A few sentences about what you have in mind…"></textarea>
+          <div style="display:flex;justify-content:space-between;gap:1rem">
+            <span class="form-error" id="err-message" role="alert"></span>
+            <span class="form-hint" aria-live="polite">
+              <span id="charCount">0</span>&nbsp;/&nbsp;2000
+            </span>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <button class="form-submit" type="submit">
+            <span>Open email app</span>
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 8h10M9.2 4.2 13 8l-3.8 3.8"/>
+            </svg>
+          </button>
+          <p style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-faint);margin:0">
+            Opens your default email app.
+          </p>
+        </div>
+
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <!-- ═══════════════════════ TOPICS ═══════════════════════ -->
+    <section class="section" id="topics" aria-labelledby="topicsTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>03 — Topics</p>
+        <h2 class="section__title" id="topicsTitle" data-reveal>What can we talk about?</h2>
+      </header>
+
+      <div class="topics">
+
+        <article class="topic" data-reveal>
+          <span class="topic__num">01</span>
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </span>
+          <h3 class="topic__title">Development Opportunities</h3>
+          <p class="topic__desc">
+            Discuss software development roles, AI engineering opportunities and
+            technical work.
+          </p>
+        </article>
+
+        <article class="topic" data-reveal>
+          <span class="topic__num">02</span>
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <h3 class="topic__title">Collaboration</h3>
+          <p class="topic__desc">
+            Explore open-source projects, software ideas and technical collaborations.
+          </p>
+        </article>
+
+        <article class="topic" data-reveal>
+          <span class="topic__num">03</span>
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <h3 class="topic__title">Technology &amp; Research</h3>
+          <p class="topic__desc">
+            Discuss AI, software engineering, cybersecurity, physics and emerging
+            technologies.
+          </p>
+        </article>
+
+        <article class="topic" data-reveal>
+          <span class="topic__num">04</span>
+          <span class="topic__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </span>
+          <h3 class="topic__title">General Conversations</h3>
+          <p class="topic__desc">
+            Questions, ideas, feedback and professional networking.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ AVAILABILITY ═══════════════════════ -->
+    <section class="section" id="availability" aria-labelledby="availTitle">
+      <div class="availability" data-reveal>
+        <span class="availability__dot" aria-hidden="true"></span>
+        <div class="availability__body">
+          <p class="availability__title" id="availTitle">Open to Opportunities</p>
+          <p class="availability__text">
+            I'm interested in exploring suitable entry-level opportunities,
+            particularly in AI engineering and software development, as well as
+            meaningful technical collaborations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CLOSING ═══════════════════════ -->
+    <section class="closing" id="closing" aria-labelledby="closingTitle">
+      <h2 class="closing__title" id="closingTitle" data-reveal>
+        Until we <em>connect.</em>
+      </h2>
+      <p class="closing__lede" data-reveal>
+        Thanks for taking the time to explore my work. I look forward to hearing
+        from you.
+      </p>
+      <div class="closing__actions closing__actions--contact" data-reveal>
+        <a class="btn btn--primary"
+           href="https://wa.me/923427473993"
+           target="_blank" rel="noopener noreferrer">
+          WhatsApp
+          <svg viewBox="0 0 14 14" width="11" height="11" fill="none"
+               stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11 11 3M5 3h6v6"/>
+          </svg>
+        </a>
+        <a class="btn btn--ghost" href="mailto:amanravian1289@gmail.com">
+          Email
+        </a>
+        <a class="btn btn--ghost" href="index.html">Back to Home</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer footer--contact">
+    <div class="footer-cols">
+      <div>
+        <p class="footer-col__brand">Aman Sohail</p>
+        <p class="footer-col__tag">Developer Portfolio</p>
+        <p class="footer-col__motto">Your experience. Your choice.</p>
+      </div>
+      <div>
+        <p class="footer-col__label">Social</p>
+        <div class="footer-col__links">
+          <a class="footer-col__link" href="https://github.com/lightibulb"
+             target="_blank" rel="noopener noreferrer">
+            GitHub
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 11 11 3M5 3h6v6"/>
+            </svg>
+          </a>
+          <a class="footer-col__link" href="https://pk.linkedin.com/in/aman-sohail-485b75421"
+             target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 11 11 3M5 3h6v6"/>
+            </svg>
+          </a>
+          <a class="footer-col__link" href="https://instagram.com/p.aman21"
+             target="_blank" rel="noopener noreferrer">
+            Instagram
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 11 11 3M5 3h6v6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col__label">Navigate</p>
+        <div class="footer-col__links">
+          <a class="footer-col__link" href="index.html">Home</a>
+          <a class="footer-col__link" href="projects.html">Projects</a>
+          <a class="footer-col__link" href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="footerYear">2026</span> Aman Sohail — Built in the open</span>
+      <a href="#hero">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js" defer></script>
+
+  <script>
+  /* ==========================================================================
+     Contact page — page-specific behaviour
+     Shared nav / theme / reveal / parallax behaviour is in site.js.
+     This block adds:
+       - footer year
+       - copy email button
+       - character counter
+       - form validation + mailto submission
+     ========================================================================== */
+  (function () {
+    'use strict';
+
+    var reduced = document.documentElement.classList.contains('no-motion');
+
+    /* -------------------------------------------------------------- Footer year */
+    (function setYear() {
+      var el = document.getElementById('footerYear');
+      if (el) { el.textContent = String(new Date().getFullYear()); }
+    })();
+
+    /* -------------------------------------------------------------- Copy email */
+    (function initCopy() {
+      var btn = document.querySelector('.contact-card__btn--copy');
+      if (!btn) { return; }
+      var email = btn.getAttribute('data-copy') || '';
+      if (!email) { return; }
+
+      function flash(state) {
+        btn.classList.add('is-copied');
+        var originalHTML = btn.innerHTML;
+        btn.innerHTML = state === 'done'
+          ? 'Copied&nbsp;✓'
+          : 'Copy failed';
+
+        window.setTimeout(function () {
+          btn.classList.remove('is-copied');
+          btn.innerHTML = originalHTML;
+        }, 1600);
+      }
+
+      btn.addEventListener('click', function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(function () {
+            flash('done');
+          }).catch(function () {
+            legacyCopy(email, flash);
+          });
+        } else {
+          legacyCopy(email, flash);
+        }
+      });
+
+      function legacyCopy(text, done) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          var ok = document.execCommand('copy');
+          done(ok ? 'done' : 'fail');
+        } catch (e) {
+          done('fail');
+        } finally {
+          document.body.removeChild(ta);
+        }
+      }
+    })();
+
+    /* -------------------------------------------------------------- Form */
+    (function initForm() {
+      var form = document.getElementById('contactForm');
+      if (!form) { return; }
+
+      var status = document.getElementById('formStatus');
+      var submitBtn = form.querySelector('.form-submit');
+      var msgInput = form.querySelector('textarea[name="message"]');
+      var charCount = document.getElementById('charCount');
+      var email = 'amanravian1289@gmail.com';
+
+      /* Take over HTML5 validation: our JS produces better, consistent UX.
+         Without JS, the browser still validates and the mailto action works. */
+      form.setAttribute('novalidate', 'true');
+
+      /* ---------- character counter ---------- */
+      function updateCount() {
+        if (charCount && msgInput) {
+          charCount.textContent = String(msgInput.value.length);
+        }
+      }
+      if (msgInput) {
+        updateCount();
+        msgInput.addEventListener('input', updateCount);
+      }
+
+      /* ---------- validation ---------- */
+      function isValidEmail(value) {
+        /* Reasonably strict: local@domain.tld with at least 2 char TLD */
+        return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
+      }
+
+      function getError(field) {
+        var value = (field.value || '').trim();
+        var name = field.name;
+
+        if (!value) {
+          return getRequiredMsg(name);
+        }
+        if (name === 'email' && !isValidEmail(value)) {
+          return 'Please enter a valid email address.';
+        }
+        if (name === 'name' && value.length < 2) {
+          return 'Name must be at least 2 characters.';
+        }
+        if (name === 'subject' && value.length < 3) {
+          return 'Subject must be at least 3 characters.';
+        }
+        if (name === 'message' && value.length < 20) {
+          return 'Message must be at least 20 characters.';
+        }
+        if (name === 'message' && value.length > 2000) {
+          return 'Message must be under 2000 characters.';
+        }
+        return '';
+      }
+
+      function getRequiredMsg(name) {
+        switch (name) {
+          case 'name':    return 'Please enter your name.';
+          case 'email':   return 'Please enter your email address.';
+          case 'subject': return 'Please enter a subject.';
+          case 'message': return 'Please write a message.';
+          default:        return 'This field is required.';
+        }
+      }
+
+      function showError(field, message) {
+        var row = field.closest('.form-row');
+        var err = document.getElementById('err-' + field.name);
+        if (err) { err.textContent = message; }
+        if (row) { row.classList.add('has-error'); }
+        field.setAttribute('aria-invalid', 'true');
+        if (err) { field.setAttribute('aria-describedby', err.id); }
+      }
+
+      function clearError(field) {
+        var row = field.closest('.form-row');
+        var err = document.getElementById('err-' + field.name);
+        if (err) { err.textContent = ''; }
+        if (row) { row.classList.remove('has-error'); }
+        field.removeAttribute('aria-invalid');
+      }
+
+      /* ---------- clear error as user types ---------- */
+      var fields = Array.prototype.slice.call(
+        form.querySelectorAll('input[name], textarea[name]')
+      );
+      fields.forEach(function (field) {
+        field.addEventListener('input', function () {
+          if (field.getAttribute('aria-invalid') === 'true') {
+            var msg = getError(field);
+            if (msg) {
+              /* still invalid — refresh message */
+              var err = document.getElementById('err-' + field.name);
+              if (err) { err.textContent = msg; }
+            } else {
+              clearError(field);
+            }
+          }
+        });
+      });
+
+      /* ---------- build mailto URL ---------- */
+      function buildMailto(data) {
+        var subject = 'Portfolio contact — ' + data.subject;
+        var body = [
+          'From: ' + data.name + ' <' + data.email + '>',
+          '',
+          data.message,
+          '',
+          '---',
+          'Sent via the contact form on the portfolio site.'
+        ].join('\n');
+
+        return 'mailto:' + email
+          + '?subject=' + encodeURIComponent(subject)
+          + '&body=' + encodeURIComponent(body);
+      }
+
+      /* ---------- status rendering ---------- */
+      function showStatus(state, title, bodyHTML) {
+        if (!status) { return; }
+        status.setAttribute('data-state', state);
+        status.innerHTML =
+          '<p class="form-status__title">' + title + '</p>'
+          + '<div class="form-status__body">' + bodyHTML + '</div>';
+        status.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      }
+
+      function clearStatus() {
+        if (!status) { return; }
+        status.removeAttribute('data-state');
+        status.innerHTML = '';
+      }
+
+      /* ---------- submit ---------- */
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        clearStatus();
+
+        var data = {
+          name:    form.querySelector('input[name="name"]').value.trim(),
+          email:   form.querySelector('input[name="email"]').value.trim(),
+          subject: form.querySelector('input[name="subject"]').value.trim(),
+          message: form.querySelector('textarea[name="message"]').value.trim()
+        };
+
+        /* Validate every field */
+        var firstInvalid = null;
+        fields.forEach(function (field) {
+          var msg = getError(field);
+          if (msg) {
+            showError(field, msg);
+            if (!firstInvalid) { firstInvalid = field; }
+          } else {
+            clearError(field);
+          }
+        });
+
+        if (firstInvalid) {
+          firstInvalid.focus({ preventScroll: false });
+          showStatus(
+            'error',
+            'Please check the form',
+            'Some fields need attention. Review the highlighted items above and try again.'
+          );
+          return;
+        }
+
+        /* Open the mailto — user's email app takes it from here */
+        submitBtn.disabled = true;
+        var mailtoUrl = buildMailto(data);
+
+        /* Use location.href for best mailto handling across browsers.
+           After a short delay, show success — email app should be opening. */
+        try {
+          window.location.href = mailtoUrl;
+        } catch (e) {
+          /* No email app configured, or browser blocked it */
+        }
+
+        window.setTimeout(function () {
+          submitBtn.disabled = false;
+
+          var fallbackHTML =
+            'Your email application should open with the message prefilled. '
+            + 'If nothing happened, you can '
+            + '<a href="mailto:' + email + '" style="color:var(--accent);text-decoration:underline">open the email app manually</a> '
+            + 'or copy the address below.';
+
+          showStatus('success', 'Ready to send', fallbackHTML);
+
+          /* Add a copy button inside the status block */
+          if (status) {
+            var actions = document.createElement('div');
+            actions.className = 'form-status__actions';
+            var copyBtn = document.createElement('button');
+            copyBtn.type = 'button';
+            copyBtn.className = 'contact-card__btn contact-card__btn--copy';
+            copyBtn.setAttribute('data-copy', email);
+            copyBtn.innerHTML = 'Copy email address';
+            copyBtn.addEventListener('click', function () {
+              if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(function () {
+                  copyBtn.textContent = 'Copied ✓';
+                  window.setTimeout(function () {
+                    copyBtn.textContent = 'Copy email address';
+                  }, 1500);
+                });
+              } else {
+                var ta = document.createElement('textarea');
+                ta.value = email;
+                ta.style.position = 'absolute';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(ta);
+                copyBtn.textContent = 'Copied ✓';
+                window.setTimeout(function () {
+                  copyBtn.textContent = 'Copy email address';
+                }, 1500);
+              }
+            });
+            actions.appendChild(copyBtn);
+            status.appendChild(actions);
+          }
+        }, 600);
+      });
+    })();
+  })();
+  </script>
+
+</body>
+</html>

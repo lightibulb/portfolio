@@ -367,6 +367,14 @@
 
   function onChangeTheme() {
     hideDock(function () {
+      // fix#3: reset selected state
+      state.selected = null;
+
+      dom.cards.forEach(function (card) {
+        card.classList.remove('is-selected');
+        card.setAttribute('aria-pressed', 'false');
+      });
+
       if (dom.cardsWrap) {
         dom.cardsWrap.classList.remove('has-selection');
       }
