@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Aman Sohail — Portfolio
+   assets/css/themes.css
+   --------------------------------------------------------------------------
+   SINGLE SOURCE OF TRUTH for design tokens and the three themes.
+   Loaded by every page (index, about, skills, 404) before its own CSS.
+   To retune a theme, edit it here — no other file defines colours.
+
+   Themes
+     dark       default · minimal charcoal and warm ivory
+     rich       royal · imperial purple, polished gold, ruby
+     cyberpunk  neon · void black, acid yellow, hot magenta, electric cyan
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono",
+               Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Motion */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --pad-x: clamp(1.25rem, 4vw, 4.5rem);
+  --container: 1180px;
+  --content: 720px;
+  --nav-h: 68px;
+
+  /* Shape (themes override these) */
+  --r-card: 12px;
+  --r-btn: 10px;
+  --r-pill: 999px;
+
+  /* ── DARK (default) ───────────────────────────────────────────────────── */
+  --bg: #0a0a0c;
+  --bg-soft: #101013;
+  --text: #f2efea;
+  --text-dim: #96938f;
+  --text-faint: #63615f;
+
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --rule: rgba(255, 255, 255, 0.08);
+
+  --accent: #e8e2d9;
+  --accent-2: #c9a87c;
+  --accent-3: #e8e2d9;
+  --accent-soft: rgba(232, 226, 217, 0.14);
+  --accent-contrast: #0a0a0c;
+
+  --surface: rgba(255, 255, 255, 0.022);
+  --surface-hover: rgba(255, 255, 255, 0.05);
+
+  --grid-color: #ffffff;
+  --grid-opacity: 0.024;
+  --orb-1: rgba(232, 226, 217, 0.07);
+  --orb-2: rgba(150, 160, 180, 0.05);
+  --orb-3: rgba(255, 255, 255, 0.03);
+  --scan-color: transparent;
+  --scan-opacity: 0;
+  --vignette: rgba(0, 0, 0, 0.55);
+
+  --nav-bg: rgba(10, 10, 12, 0.72);
+
+  /* Welcome-page surfaces */
+  --card-bg: rgba(255, 255, 255, 0.022);
+  --card-bg-hover: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.95);
+  --dock-bg: rgba(16, 16, 19, 0.76);
+
+  /* Effects */
+  --gradient-text: none;           /* only Rich uses a gradient headline */
+  --lift-shadow: 0 24px 60px -34px rgba(0, 0, 0, 0.9);
+  --btn-glow: 0 16px 40px -16px var(--accent);
+  --glow-text: none;
+}
+
+/* Explicit dark = same as the defaults above. */
+html[data-theme="dark"] { color-scheme: dark; }
+
+
+/* ==========================================================================
+   RICH — royalty and authority
+   Imperial purple field, polished-gold linework and type, ruby depth.
+   Gold is used sparingly and only as a metal: hairlines, headlines, CTAs.
+   ========================================================================== */
+html[data-theme="rich"] {
+  --r-card: 6px;
+  --r-btn: 6px;
+
+  --bg: #12072b;
+  --bg-soft: #1b0d3d;
+  --text: #f8f0dc;                 /* ivory */
+  --text-dim: #c5b8dc;             /* soft lavender */
+  --text-faint: #9585b4;
+
+  --border: rgba(216, 178, 88, 0.2);
+  --border-strong: rgba(216, 178, 88, 0.5);
+  --rule: rgba(216, 178, 88, 0.18);
+
+  --accent: #d8b258;               /* royal gold */
+  --accent-2: #a77bff;             /* amethyst */
+  --accent-3: #c2185b;             /* ruby */
+  --accent-soft: rgba(216, 178, 88, 0.16);
+  --accent-contrast: #170a33;
+
+  --surface: rgba(216, 178, 88, 0.05);
+  --surface-hover: rgba(216, 178, 88, 0.1);
+
+  --grid-color: #d8b258;
+  --grid-opacity: 0.045;
+  --orb-1: rgba(108, 56, 224, 0.55);   /* royal violet */
+  --orb-2: rgba(150, 22, 74, 0.42);    /* ruby / burgundy */
+  --orb-3: rgba(216, 178, 88, 0.16);   /* gold bloom */
+  --scan-opacity: 0;
+  --vignette: rgba(8, 2, 22, 0.68);
+
+  --nav-bg: rgba(18, 7, 43, 0.8);
+
+  --card-bg: rgba(216, 178, 88, 0.05);
+  --card-bg-hover: rgba(216, 178, 88, 0.1);
+  --card-border: rgba(216, 178, 88, 0.22);
+  --card-shadow: 0 30px 70px -34px rgba(88, 40, 190, 0.75);
+  --dock-bg: rgba(27, 13, 61, 0.82);
+
+  /* Gold-foil headline */
+  --gradient-text: linear-gradient(104deg, #f9e6a8 0%, #d8b258 36%, #a87f1e 58%, #f2d98c 100%);
+  --lift-shadow: 0 28px 64px -32px rgba(88, 40, 190, 0.8);
+  --btn-glow: 0 16px 44px -14px rgba(216, 178, 88, 0.7);
+}
+
+
+/* ==========================================================================
+   CYBERPUNK — neon-noir, Night-City style
+   Void black with a violet cast. Acid yellow leads; hot magenta cuts across;
+   electric cyan draws the linework. Angular corners, scanlines, glow.
+   ========================================================================== */
+html[data-theme="cyberpunk"] {
+  --r-card: 2px;
+  --r-btn: 2px;
+  --r-pill: 2px;
+
+  --bg: #07040f;
+  --bg-soft: #0e0820;
+  --text: #f1f5ff;
+  --text-dim: #aaa6cf;
+  --text-faint: #8985b6;
+
+  --border: rgba(5, 217, 232, 0.22);
+  --border-strong: rgba(5, 217, 232, 0.6);
+  --rule: rgba(5, 217, 232, 0.18);
+
+  --accent: #fcee0a;               /* acid yellow */
+  --accent-2: #ff2a6d;             /* hot magenta-red */
+  --accent-3: #05d9e8;             /* electric cyan */
+  --accent-soft: rgba(252, 238, 10, 0.14);
+  --accent-contrast: #0a0800;
+
+  --surface: rgba(12, 8, 30, 0.6);
+  --surface-hover: rgba(24, 12, 52, 0.85);
+
+  --grid-color: #05d9e8;
+  --grid-opacity: 0.1;
+  --orb-1: rgba(255, 42, 109, 0.28);
+  --orb-2: rgba(5, 217, 232, 0.22);
+  --orb-3: rgba(120, 50, 255, 0.24);
+  --scan-color: rgba(5, 217, 232, 0.06);
+  --scan-opacity: 0.55;
+  --vignette: rgba(3, 0, 10, 0.7);
+
+  --nav-bg: rgba(7, 4, 15, 0.8);
+
+  --card-bg: rgba(12, 8, 30, 0.62);
+  --card-bg-hover: rgba(24, 12, 52, 0.85);
+  --card-border: rgba(5, 217, 232, 0.26);
+  --card-shadow: 0 0 0 1px rgba(5, 217, 232, 0.06),
+                 0 30px 80px -44px rgba(255, 42, 109, 0.55);
+  --dock-bg: rgba(10, 6, 24, 0.86);
+
+  --lift-shadow: 0 0 0 1px var(--accent-3), 0 0 32px -8px rgba(5, 217, 232, 0.55);
+  --btn-glow: 0 0 28px -2px rgba(252, 238, 10, 0.7);
+  --glow-text: 0 0 18px rgba(252, 238, 10, 0.55), 0 0 56px rgba(252, 238, 10, 0.25);
+}
