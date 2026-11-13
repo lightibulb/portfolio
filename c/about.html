@@ -28,13 +28,11 @@
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="../assets/css/themes.css?v=999" />
-  <link rel="stylesheet" href="../assets/css/site.css?v=999" />
+    <link rel="stylesheet" href="../assets/css/site.css?v=999" />
   <link rel="stylesheet" href="../assets/css/about.css" />
 
   <!-- Applies the saved theme (and js / no-motion flags) before first paint. -->
-  <script src="../assets/js/theme.js"></script>
-  <script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -64,6 +62,12 @@
 }
   </script>
       <link rel="stylesheet" href="style.css" />
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('no-motion');
+    }
+  </script>
 </head>
 
 <body>
