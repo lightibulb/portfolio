@@ -50,6 +50,7 @@ else
             -not -path '*/*.dist-info/*'            \
             -not -path '*/.ecofac.bak/*'            \
             -not -path './build/*'                  \
+	    -not -path '*.sh'
             -not -path './dist/*'                   \
             -not -name '*.pyc'   -not -name '*.pyo' -not -name '*.pyd' \
             -not -name '*.so'    -not -name '*.dylib' -not -name '*.dll' -not -name '*.exe' \
