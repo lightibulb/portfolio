@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Experience &amp; Journey — Aman Sohail</title>
+  <meta name="description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
+  <meta name="keywords" content="Aman Sohail experience, Aman Sohail SNGPL, Aman Sohail developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
+  <meta name="author" content="Aman Sohail" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0a0a0c" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Aman Sohail" />
+  <meta property="og:title" content="Experience &amp; Journey — Aman Sohail" />
+  <meta property="og:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Experience &amp; Journey — Aman Sohail" />
+  <meta name="twitter:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../assets/css/themes.css?v=999" />
+  <link rel="stylesheet" href="../assets/css/site.css?v=999" />
+
+  <script src="../assets/js/theme.js"></script>
+
+  <style>
+/* ==========================================================================
+   Experience page — page-specific styles
+   Everything shared (nav, hero, section scaffold, buttons, footer, reveal
+   system, mobile menu, orb parallax) lives in site.css.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   HERO MOTIF — vertical timeline column of pulsing nodes
+   -------------------------------------------------------------------------- */
+
+.hero__motif {
+  position: absolute;
+  top: 22%;
+  bottom: 22%;
+  right: 8%;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.hero__motif-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--border-strong) 15%,
+    var(--border-strong) 85%,
+    transparent 100%);
+}
+
+.hero__motif-node {
+  position: relative;
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+  animation: nodePulse 3.2s var(--ease-soft) infinite;
+  animation-delay: var(--d, 0s);
+}
+
+@keyframes nodePulse {
+  0%, 100% { opacity: 0.55; transform: scale(0.85); }
+  50%      { opacity: 1;    transform: scale(1); }
+}
+
+html[data-theme="cyberpunk"] .hero__motif-node {
+  background: var(--accent-2);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 12px var(--accent-2);
+}
+
+@media (max-width: 900px) {
+  .hero__motif { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__motif-node { animation: none; opacity: 0.75; }
+}
+
+/* --------------------------------------------------------------------------
+   STATUS PILLS — reused across employment, projects, chronology
+   -------------------------------------------------------------------------- */
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.32rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  white-space: nowrap;
+}
+
+.status-pill::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--text-faint);
+  flex: 0 0 auto;
+}
+
+.status-pill[data-status="active"]::before {
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+  animation: pillPulse 2.4s var(--ease-soft) infinite;
+}
+.status-pill[data-status="live"]::before {
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  animation: pillPulse 2.4s var(--ease-soft) infinite;
+}
+.status-pill[data-status="progress"]::before {
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+  animation: pillPulse 2.4s var(--ease-soft) infinite;
+}
+.status-pill[data-status="education"]::before {
+  background: var(--accent);
+}
+
+@keyframes pillPulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-pill::before { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   EMPLOYMENT — single prominent card, SNGPL
+   -------------------------------------------------------------------------- */
+
+.employment-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  transition: background-color 0.4s var(--ease),
+              border-color 0.4s var(--ease);
+}
+
+.employment-card:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.employment-card__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.employment-card__mark {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: var(--r-btn);
+  background: var(--accent-soft);
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.employment-card__company {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.employment-card__dept {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-top: 0.35rem;
+}
+
+.employment-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.employment-card__meta-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: transparent;
+}
+
+.employment-card__meta-pill--role {
+  color: var(--accent-contrast);
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 500;
+}
+
+.employment-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  min-width: 0;
+}
+
+.employment-card__role {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.employment-card__desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-dim);
+}
+
+.employment-card__note {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-faint);
+  background: var(--bg-soft);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-btn) var(--r-btn) 0;
+}
+
+.employment-card__note strong {
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.employment-card__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: flex-start;
+  padding: 0.55rem 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease),
+              background 0.3s var(--ease);
+}
+
+.employment-card__toggle:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  background: var(--surface);
+}
+
+.employment-card__toggle svg {
+  transition: transform 0.4s var(--ease);
+}
+
+.employment-card.is-open .employment-card__toggle svg {
+  transform: rotate(45deg);
+}
+
+.employment-card__expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s var(--ease-out-expo);
+}
+
+.employment-card.is-open .employment-card__expand {
+  grid-template-rows: 1fr;
+}
+
+.employment-card__expand-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.employment-card__list {
+  padding-top: 0.4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.employment-card__list li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+
+.employment-card__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  .employment-card { grid-template-columns: 1fr; }
+  .employment-card__mark { width: 48px; height: 48px; font-size: 0.95rem; }
+}
+
+/* --------------------------------------------------------------------------
+   INDEPENDENT DEVELOPMENT — vertical thread of project cards
+   -------------------------------------------------------------------------- */
+
+.thread {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.1rem, 2.4vw, 1.6rem);
+  padding-left: clamp(1.4rem, 4vw, 2.6rem);
+}
+
+.thread::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: clamp(0.35rem, 1vw, 0.7rem);
+  width: 1px;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--border-strong) 6%,
+    var(--border-strong) 94%,
+    transparent 100%);
+}
+
+.thread__item {
+  position: relative;
+}
+
+.thread__dot {
+  position: absolute;
+  top: 1.35rem;
+  left: calc(clamp(0.35rem, 1vw, 0.7rem) - clamp(1.4rem, 4vw, 2.6rem) - 4px);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--border-strong);
+}
+
+.thread__item--ecofac .thread__dot { background: #10b981; }
+.thread__item--cleanforge .thread__dot { background: #3b82f6; }
+.thread__item--rely .thread__dot { background: #a78bfa; }
+.thread__item--livingprayer .thread__dot { background: #c9a87c; }
+
+.thread__card {
+  position: relative;
+  padding: clamp(1.2rem, 2.4vw, 1.8rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  transition: transform 0.4s var(--ease),
+              background-color 0.4s var(--ease),
+              border-color 0.4s var(--ease),
+              box-shadow 0.4s var(--ease);
+}
+
+.thread__card:hover {
+  transform: translateY(-2px);
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+  box-shadow: var(--lift-shadow);
+}
+
+.thread__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.thread__title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.thread__name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.thread__role {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.thread__desc {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+
+.thread__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.thread__tech li {
+  display: inline-flex;
+  padding: 0.28rem 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: transparent;
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.thread__card:hover .thread__tech li {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.thread__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+}
+
+.thread__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  transition: color 0.3s var(--ease);
+}
+
+.thread__link svg {
+  transition: transform 0.3s var(--ease);
+}
+
+.thread__link:hover {
+  color: var(--accent);
+}
+
+.thread__link:hover svg {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 620px) {
+  .thread__head { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+}
+
+/* --------------------------------------------------------------------------
+   TECHNICAL EXPERIENCE — 4-panel grid
+   -------------------------------------------------------------------------- */
+
+.tech-intro {
+  max-width: 62ch;
+  margin-bottom: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+.tech-intro strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  overflow: hidden;
+}
+
+.tech-panel {
+  position: relative;
+  padding: clamp(1.3rem, 2.6vw, 1.8rem);
+  background: var(--bg);
+  transition: background-color 0.4s var(--ease);
+}
+
+.tech-panel:hover {
+  background: var(--surface-hover);
+}
+
+.tech-panel__label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 1rem;
+}
+
+.tech-panel__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.tech-panel__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.tech-panel__list li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+
+.tech-panel__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.7;
+}
+
+/* --------------------------------------------------------------------------
+   CHRONOLOGY — 3-node vertical timeline
+   -------------------------------------------------------------------------- */
+
+.chronology {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.6rem, 3vw, 2.4rem);
+  max-width: 780px;
+  margin: 0 auto;
+  padding-left: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.chronology::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: clamp(0.5rem, 1.2vw, 0.85rem);
+  width: 1px;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    var(--border-strong) 8%,
+    var(--border-strong) 92%,
+    transparent 100%);
+}
+
+.chrono {
+  position: relative;
+}
+
+.chrono__dot {
+  position: absolute;
+  top: 1.3rem;
+  left: calc(clamp(0.5rem, 1.2vw, 0.85rem) - clamp(1.5rem, 4vw, 2.4rem) - 5px);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+
+.chrono--done .chrono__dot {
+  background: var(--accent);
+}
+
+.chrono--active .chrono__dot {
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 12px var(--accent);
+  animation: chronoPulse 2.6s var(--ease-soft) infinite;
+}
+
+@keyframes chronoPulse {
+  0%, 100% { box-shadow: 0 0 0 4px var(--bg), 0 0 8px var(--accent); }
+  50%      { box-shadow: 0 0 0 4px var(--bg), 0 0 20px var(--accent); }
+}
+
+.chrono__year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.chrono__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.chrono__desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chrono--active .chrono__dot { animation: none; }
+}
+
+/* --------------------------------------------------------------------------
+   PHILOSOPHY — "Learning by Building"
+   -------------------------------------------------------------------------- */
+
+.philosophy-lb {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 4vw, 3rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  text-align: center;
+}
+
+.philosophy-lb__mark {
+  display: inline-block;
+  margin-bottom: clamp(1rem, 2.4vw, 1.6rem);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.philosophy-lb__mark::before,
+.philosophy-lb__mark::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--border-strong);
+  vertical-align: middle;
+  margin: 0 0.7rem;
+}
+
+.philosophy-lb__quote {
+  max-width: 32ch;
+  margin: 0 auto clamp(1.6rem, 3vw, 2.4rem);
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.4vw, 2.6rem);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  color: var(--text);
+}
+
+.philosophy-lb__quote em {
+  color: var(--accent);
+}
+
+.philosophy-lb__traits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.philosophy-lb__trait {
+  display: inline-flex;
+  padding: 0.4rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  transition: color 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.philosophy-lb__trait:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+/* --------------------------------------------------------------------------
+   CAREER DIRECTION — "Where I'm Heading"
+   -------------------------------------------------------------------------- */
+
+.career {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1.6rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.career__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.career__desc {
+  font-size: clamp(1rem, 1.3vw, 1.08rem);
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+.career__note {
+  padding: 0.85rem 1rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--text-faint);
+  background: var(--surface);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-btn) var(--r-btn) 0;
+}
+
+.career__note strong {
+  color: var(--text-dim);
+  font-weight: 500;
+}
+
+.career__focus {
+  padding: clamp(1.4rem, 2.8vw, 2rem);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+}
+
+.career__focus-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 1rem;
+}
+
+.career__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  list-style: none;
+}
+
+.career__list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.career__list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.career__list li span {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  flex: 0 0 auto;
+}
+
+@media (max-width: 720px) {
+  .career { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------------------------------------
+   THEME FLOURISHES
+   -------------------------------------------------------------------------- */
+
+/* Rich — gradient on major headlines, gilded hairline accents */
+html[data-theme="rich"] .hero__title > .hero__line > span,
+html[data-theme="rich"] .section__title,
+html[data-theme="rich"] .closing__title {
+  /* inherits site.css gradient rule — nothing extra needed here */
+}
+
+html[data-theme="rich"] .employment-card__mark {
+  background: linear-gradient(160deg,
+    rgba(216, 178, 88, 0.25),
+    rgba(108, 56, 224, 0.2));
+  border-color: var(--border-strong);
+}
+
+html[data-theme="rich"] .thread__card,
+html[data-theme="rich"] .tech-panel,
+html[data-theme="rich"] .career__focus,
+html[data-theme="rich"] .philosophy-lb {
+  box-shadow: inset 0 1px 0 rgba(216, 178, 88, 0.12);
+}
+
+html[data-theme="rich"] .philosophy-lb__quote em {
+  background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Cyberpunk — mono labels, uppercase, neon accent glow */
+html[data-theme="cyberpunk"] .employment-card__company,
+html[data-theme="cyberpunk"] .employment-card__role,
+html[data-theme="cyberpunk"] .thread__name,
+html[data-theme="cyberpunk"] .tech-panel__title,
+html[data-theme="cyberpunk"] .chrono__title {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+html[data-theme="cyberpunk"] .employment-card__company { font-size: 1rem; }
+html[data-theme="cyberpunk"] .employment-card__role { font-size: 1.05rem; letter-spacing: 0.1em; }
+html[data-theme="cyberpunk"] .thread__name { font-size: 1rem; letter-spacing: 0.1em; }
+html[data-theme="cyberpunk"] .tech-panel__title { font-size: 0.9rem; letter-spacing: 0.12em; }
+html[data-theme="cyberpunk"] .chrono__title { font-size: 0.95rem; letter-spacing: 0.1em; }
+
+html[data-theme="cyberpunk"] .employment-card__mark {
+  border-color: var(--accent-3);
+  color: var(--accent-3);
+  box-shadow: 0 0 18px -6px var(--accent-3);
+}
+
+html[data-theme="cyberpunk"] .employment-card__meta-pill--role {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  box-shadow: 0 0 14px -4px var(--accent);
+}
+
+html[data-theme="cyberpunk"] .employment-card__toggle {
+  color: var(--accent-3);
+  border-color: var(--border-strong);
+}
+
+html[data-theme="cyberpunk"] .thread__card:hover {
+  box-shadow: 0 0 0 1px var(--accent-3), 0 0 30px -10px var(--accent-3);
+}
+
+html[data-theme="cyberpunk"] .tech-panel__list li::before {
+  background: var(--accent-2);
+  box-shadow: 0 0 8px var(--accent-2);
+}
+
+html[data-theme="cyberpunk"] .chrono__year {
+  color: var(--accent-3);
+}
+
+html[data-theme="cyberpunk"] .chrono--active .chrono__dot {
+  border-color: var(--accent-3);
+  background: var(--accent-3);
+  box-shadow: 0 0 0 4px var(--bg), 0 0 16px var(--accent-3);
+}
+
+html[data-theme="cyberpunk"] .philosophy-lb__quote {
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: clamp(1.1rem, 2.4vw, 1.7rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+html[data-theme="cyberpunk"] .philosophy-lb__quote em {
+  color: var(--accent-3);
+  text-shadow: 0 0 18px rgba(5, 217, 232, 0.5);
+}
+
+html[data-theme="cyberpunk"] .career__note {
+  border-left-color: var(--accent-2);
+  background: rgba(255, 42, 109, 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE — small screen tweaks
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  .thread__dot,
+  .chrono__dot {
+    /* keep dots aligned when padding changes */
+  }
+
+  .employment-card__role { font-size: 1.35rem; }
+  .thread__name { font-size: 1.35rem; }
+
+  .philosophy-lb__quote { font-size: clamp(1.3rem, 6vw, 1.8rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .employment-card__expand,
+  .employment-card__toggle svg {
+    transition: none;
+  }
+}
+  </style>
+  <link rel="stylesheet" href="../assets/css/themes-flourish.css?v=999" />
+  <link rel="stylesheet" href="../assets/css/themes-flourish.css?v=999" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Ambient background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__orb bg__orb--1" data-orb></div>
+    <div class="bg__orb bg__orb--2" data-orb></div>
+    <div class="bg__orb bg__orb--3" data-orb></div>
+    <div class="bg__scan"></div>
+    <div class="bg__vignette"></div>
+  </div>
+
+  <div class="progress" aria-hidden="true">
+    <div class="progress__bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
+        <span class="nav__mark">AS</span>
+        <span class="nav__name">Aman Sohail</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav__links" id="navLinks">
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="skills.html">Skills</a></li>
+          <li><a class="nav__link" href="projects.html">Projects</a></li>
+          <li><a class="nav__link" href="experience.html" aria-current="page">Experience</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__theme" role="group" aria-label="Choose theme">
+        <button class="nav__theme-btn" data-theme-value="dark" type="button"
+                aria-pressed="false" aria-label="Dark theme" title="Dark"></button>
+        <button class="nav__theme-btn" data-theme-value="rich" type="button"
+                aria-pressed="false" aria-label="Rich theme" title="Rich"></button>
+        <button class="nav__theme-btn" data-theme-value="cyberpunk" type="button"
+                aria-pressed="false" aria-label="Cyberpunk theme" title="Cyberpunk"></button>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="hero__motif" aria-hidden="true">
+        <span class="hero__motif-line"></span>
+        <span class="hero__motif-node" style="--d: 0s"></span>
+        <span class="hero__motif-node" style="--d: 0.7s"></span>
+        <span class="hero__motif-node" style="--d: 1.4s"></span>
+        <span class="hero__motif-node" style="--d: 2.1s"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__label">Aman Sohail — Experience</p>
+        <h1 class="hero__title" id="heroTitle">
+          <span class="sr-only">Experience and journey: </span>
+          <span class="hero__line"><span>Experience</span></span>
+          <span class="hero__line"><span><em>&amp;</em> Journey<span class="hero__dot">.</span></span></span>
+        </h1>
+        <p class="hero__sub">Every project, responsibility and experiment adds another layer.</p>
+        <p class="hero__lede">
+          My journey combines practical workplace experience, independent software
+          development and continuous technical learning.
+        </p>
+        <a class="hero__scroll" href="#employment">
+          Read the timeline
+          <span class="hero__scroll-track" aria-hidden="true"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ EMPLOYMENT ═══════════════════════════ -->
+    <section class="section" id="employment" aria-labelledby="employmentTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>01 — Professional</p>
+        <h2 class="section__title" id="employmentTitle" data-reveal>Workplace experience.</h2>
+      </header>
+
+      <article class="employment-card" data-reveal>
+        <div class="employment-card__badge">
+          <div class="employment-card__mark" aria-hidden="true">SNGPL</div>
+          <div>
+            <p class="employment-card__company">Sui Northern Gas Pipelines Limited</p>
+            <p class="employment-card__dept">Project Office · Pakistan</p>
+            <div class="employment-card__meta">
+              <span class="status-pill" data-status="active">Sep 2025 – Present</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="employment-card__body">
+          <div>
+            <div class="employment-card__meta" style="margin-bottom:.6rem">
+              <span class="employment-card__meta-pill employment-card__meta-pill--role">Office Assistant</span>
+              <span class="employment-card__meta-pill">Casual Worker</span>
+            </div>
+            <h3 class="employment-card__role">Supporting the project office.</h3>
+          </div>
+
+          <p class="employment-card__desc">
+            Supporting daily project-office operations, documentation and coordination
+            while assisting project staff with routine administrative and material-related
+            responsibilities.
+          </p>
+
+          <p class="employment-card__note">
+            <strong>Position type —</strong> This is a casual worker role, not a
+            permanent, executive, engineering or management appointment. No promotions
+            or awards are claimed.
+          </p>
+
+          <button class="employment-card__toggle" type="button"
+                  aria-expanded="false" aria-controls="employment-responsibilities">
+            View responsibilities
+            <svg viewBox="0 0 14 14" width="12" height="12" fill="none"
+                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 7h8M7 3v8"/>
+            </svg>
+          </button>
+
+          <div class="employment-card__expand" id="employment-responsibilities">
+            <div class="employment-card__expand-inner">
+              <ul class="employment-card__list">
+                <li>Support daily project-office operations and documentation.</li>
+                <li>Assist foremen and project staff with routine tasks and communication.</li>
+                <li>Review and follow up on material-related issues concerning the main pipeline project.</li>
+                <li>Support general coordination and office activities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ═══════════════════════════ INDEPENDENT DEVELOPMENT ═══════════════════════════ -->
+    <section class="section" id="independent" aria-labelledby="independentTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>02 — Independent</p>
+        <h2 class="section__title" id="independentTitle" data-reveal>Building beyond the workplace.</h2>
+      </header>
+
+      <p class="tech-intro" data-reveal>
+        Alongside my professional responsibilities, I independently develop software
+        projects and explore technical ideas — each one chosen because it teaches me
+        something specific.
+      </p>
+
+      <div class="thread">
+
+        <!-- EcoFac -->
+        <article class="thread__item thread__item--ecofac" data-reveal>
+          <span class="thread__dot" aria-hidden="true"></span>
+          <div class="thread__card">
+            <div class="thread__head">
+              <div class="thread__title-block">
+                <h3 class="thread__name">EcoFac</h3>
+                <p class="thread__role">Independent Creator / Developer</p>
+              </div>
+              <span class="status-pill" data-status="progress">In Progress</span>
+            </div>
+            <p class="thread__desc">
+              Developing an energy-intelligence engine for facility-level electricity
+              analytics — parsing meter data, computing baselines and surfacing
+              statistical anomalies with deterministic evidence.
+            </p>
+            <ul class="thread__tech">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>SQLite</li>
+              <li>Statistical anomaly detection</li>
+              <li>REST APIs</li>
+              <li>pytest</li>
+              <li>GitHub Actions</li>
+              <li>Render</li>
+            </ul>
+            <div class="thread__links">
+              <a class="thread__link" href="https://github.com/lightibulb/EcoFac"
+                 target="_blank" rel="noopener noreferrer">
+                Repository
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+              <a class="thread__link" href="https://ecofac.onrender.com"
+                 target="_blank" rel="noopener noreferrer">
+                Live demo
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CleanForge -->
+        <article class="thread__item thread__item--cleanforge" data-reveal>
+          <span class="thread__dot" aria-hidden="true"></span>
+          <div class="thread__card">
+            <div class="thread__head">
+              <div class="thread__title-block">
+                <h3 class="thread__name">CleanForge</h3>
+                <p class="thread__role">Independent Creator / Developer</p>
+              </div>
+              <span class="status-pill" data-status="progress">In Progress</span>
+            </div>
+            <p class="thread__desc">
+              Developing an open-source Android storage-management and analysis
+              application using Shizuku-based privileges — without root access.
+            </p>
+            <ul class="thread__tech">
+              <li>Kotlin</li>
+              <li>Java</li>
+              <li>Android SDK</li>
+              <li>XML</li>
+              <li>AIDL</li>
+              <li>Shizuku</li>
+              <li>GitHub Actions</li>
+              <li>Testing &amp; debugging</li>
+            </ul>
+            <div class="thread__links">
+              <a class="thread__link" href="https://github.com/lightibulb/CleanForge"
+                 target="_blank" rel="noopener noreferrer">
+                Repository
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- RELY -->
+        <article class="thread__item thread__item--rely" data-reveal>
+          <span class="thread__dot" aria-hidden="true"></span>
+          <div class="thread__card">
+            <div class="thread__head">
+              <div class="thread__title-block">
+                <h3 class="thread__name">RELY</h3>
+                <p class="thread__role">Independent Creator / Developer</p>
+              </div>
+              <span class="status-pill" data-status="progress">In Development</span>
+            </div>
+            <p class="thread__desc">
+              Designing a lightweight, pixel-inspired Android music player intended
+              to stream music from users' own Google Drive storage.
+            </p>
+            <ul class="thread__tech">
+              <li>Android development</li>
+              <li>Material 3</li>
+              <li>Pixel-inspired interface</li>
+              <li>Lightweight architecture</li>
+              <li>Google Drive integration (objective)</li>
+            </ul>
+            <div class="thread__links">
+              <a class="thread__link" href="https://github.com/lightibulb/RELY"
+                 target="_blank" rel="noopener noreferrer">
+                Repository
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Living Prayer -->
+        <article class="thread__item thread__item--livingprayer" data-reveal>
+          <span class="thread__dot" aria-hidden="true"></span>
+          <div class="thread__card">
+            <div class="thread__head">
+              <div class="thread__title-block">
+                <h3 class="thread__name">Living Prayer</h3>
+                <p class="thread__role">Independent Creator / Developer</p>
+              </div>
+              <span class="status-pill" data-status="live">Live · Ongoing</span>
+            </div>
+            <p class="thread__desc">
+              Built and published a personal prayer and theology website featuring
+              organised resources and a consistent visual direction.
+            </p>
+            <ul class="thread__tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub Pages</li>
+            </ul>
+            <div class="thread__links">
+              <a class="thread__link" href="https://lightibulb.github.io/livingprayer/"
+                 target="_blank" rel="noopener noreferrer">
+                Visit site
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+              <a class="thread__link" href="https://github.com/lightibulb/livingprayer"
+                 target="_blank" rel="noopener noreferrer">
+                Repository
+                <svg viewBox="0 0 14 14" width="10" height="10" fill="none"
+                     stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                     stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 11 11 3M5 3h6v6"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TECHNICAL EXPERIENCE ═══════════════════════════ -->
+    <section class="section" id="technical" aria-labelledby="technicalTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>03 — Technical</p>
+        <h2 class="section__title" id="technicalTitle" data-reveal>Technical experience.</h2>
+      </header>
+
+      <p class="tech-intro" data-reveal>
+        <strong>Practical exposure through independent development —</strong> not
+        professional employment in these fields. The categories below describe
+        hands-on familiarity gained while working on the projects above.
+      </p>
+
+      <div class="tech-grid">
+
+        <div class="tech-panel" data-reveal>
+          <p class="tech-panel__label">Category 01</p>
+          <h3 class="tech-panel__title">Software Development</h3>
+          <ul class="tech-panel__list">
+            <li>Android development</li>
+            <li>Kotlin and Java exposure</li>
+            <li>Python development</li>
+            <li>HTML and CSS</li>
+            <li>Basic C programming</li>
+          </ul>
+        </div>
+
+        <div class="tech-panel" data-reveal>
+          <p class="tech-panel__label">Category 02</p>
+          <h3 class="tech-panel__title">AI-Assisted Development</h3>
+          <ul class="tech-panel__list">
+            <li>AI pair programming</li>
+            <li>Prompt engineering</li>
+            <li>Task decomposition</li>
+            <li>Reviewing AI-generated code</li>
+            <li>Debugging and auditing generated implementations</li>
+          </ul>
+        </div>
+
+        <div class="tech-panel" data-reveal>
+          <p class="tech-panel__label">Category 03</p>
+          <h3 class="tech-panel__title">Engineering Practices</h3>
+          <ul class="tech-panel__list">
+            <li>Git and GitHub</li>
+            <li>GitHub Actions</li>
+            <li>CI workflows</li>
+            <li>Software testing · pytest</li>
+            <li>REST APIs · FastAPI</li>
+            <li>SQLite</li>
+            <li>Technical documentation</li>
+          </ul>
+        </div>
+
+        <div class="tech-panel" data-reveal>
+          <p class="tech-panel__label">Category 04</p>
+          <h3 class="tech-panel__title">Security &amp; Privacy</h3>
+          <ul class="tech-panel__list">
+            <li>Security-audit follow-up</li>
+            <li>Privacy-first design</li>
+            <li>Non-root privilege boundaries</li>
+            <li>Shizuku capability limitations</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CHRONOLOGY ═══════════════════════════ -->
+    <section class="section" id="chronology" aria-labelledby="chronoTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>04 — Timeline</p>
+        <h2 class="section__title" id="chronoTitle" data-reveal>Chronology.</h2>
+      </header>
+
+      <div class="chronology">
+
+        <div class="chrono chrono--done" data-reveal>
+          <span class="chrono__dot" aria-hidden="true"></span>
+          <p class="chrono__year">2025</p>
+          <h3 class="chrono__title">Intermediate in Computer Science</h3>
+          <p class="chrono__desc">
+            Completed ICS through BISE Lahore — the formal foundation underneath
+            the independent technical learning that followed.
+          </p>
+        </div>
+
+        <div class="chrono chrono--done" data-reveal>
+          <span class="chrono__dot" aria-hidden="true"></span>
+          <p class="chrono__year">September 2025</p>
+          <h3 class="chrono__title">SNGPL · Project Office</h3>
+          <p class="chrono__desc">
+            Began working as an Office Assistant (Casual Worker) at the Sui Northern
+            Gas Pipelines Limited Project Office — supporting daily operations,
+            documentation and coordination alongside project staff.
+          </p>
+        </div>
+
+        <div class="chrono chrono--active" data-reveal>
+          <span class="chrono__dot" aria-hidden="true"></span>
+          <p class="chrono__year">2026</p>
+          <h3 class="chrono__title">Independent development</h3>
+          <p class="chrono__desc">
+            Continued independent software development and expanded work across
+            CleanForge, EcoFac, RELY and Living Prayer — deepening practice in
+            backend engineering, Android development and AI-assisted workflows.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PHILOSOPHY ═══════════════════════════ -->
+    <section class="section" id="philosophy" aria-labelledby="philTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>05 — Philosophy</p>
+        <h2 class="section__title" id="philTitle" data-reveal>Learning by building.</h2>
+      </header>
+
+      <div class="philosophy-lb" data-reveal>
+        <p class="philosophy-lb__mark">Approach</p>
+        <blockquote class="philosophy-lb__quote">
+          I learn by breaking complex problems into smaller parts,
+          <em>experimenting</em> with solutions, examining failures and
+          <em>improving</em> what I build.
+        </blockquote>
+
+        <ul class="philosophy-lb__traits">
+          <li class="philosophy-lb__trait">Independent learning</li>
+          <li class="philosophy-lb__trait">Technical research</li>
+          <li class="philosophy-lb__trait">AI-assisted development</li>
+          <li class="philosophy-lb__trait">Problem decomposition</li>
+          <li class="philosophy-lb__trait">Testing &amp; debugging</li>
+          <li class="philosophy-lb__trait">Continuous improvement</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CAREER DIRECTION ═══════════════════════════ -->
+    <section class="section" id="career" aria-labelledby="careerTitle">
+      <header class="section__head">
+        <p class="section__label" data-reveal>06 — Direction</p>
+        <h2 class="section__title" id="careerTitle" data-reveal>Where I'm heading.</h2>
+      </header>
+
+      <div class="career">
+
+        <div class="career__body" data-reveal>
+          <p class="career__desc">
+            I'm working toward a career in AI engineering, combining software
+            development, AI-assisted workflows, technical problem-solving and
+            independent project experience.
+          </p>
+          <p class="career__note">
+            <strong>Accuracy note —</strong> I do not currently hold an AI engineering
+            position. This is the direction I'm building toward, not a status I claim.
+          </p>
+        </div>
+
+        <div class="career__focus" data-reveal>
+          <p class="career__focus-label">Focus areas</p>
+          <ul class="career__list">
+            <li>AI engineering <span>Direction</span></li>
+            <li>Software engineering <span>Direction</span></li>
+            <li>Practical AI applications <span>Direction</span></li>
+            <li>Backend development <span>Practice</span></li>
+            <li>Open-source contribution <span>Practice</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CLOSING ═══════════════════════════ -->
+    <section class="closing" id="closing" aria-labelledby="closingTitle">
+      <h2 class="closing__title" id="closingTitle" data-reveal>
+        The journey <em>continues.</em>
+      </h2>
+      <p class="closing__lede" data-reveal>
+        Experience isn't only measured by job titles. It's also shaped by the
+        problems we attempt to solve and the things we learn along the way.
+      </p>
+      <div class="closing__actions" data-reveal>
+        <a class="btn btn--primary" href="projects.html">
+          Explore projects
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none"
+               stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+               stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h10M9.2 4.2 13 8l-3.8 3.8"/>
+          </svg>
+        </a>
+        <a class="btn btn--ghost" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__motto">Your experience. Your choice.</p>
+      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <a class="footer__top" href="#hero">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js" defer></script>
+
+  <script>
+  /* ==========================================================================
+     Experience page — page-specific behaviour
+     Everything shared (nav, mobile menu, theme switcher, reveal, parallax) is
+     handled by site.js. This block adds only the expand/collapse for the
+     employment responsibilities panel.
+     ========================================================================== */
+  (function () {
+    'use strict';
+
+    var card = document.querySelector('.employment-card');
+    if (!card) { return; }
+    var toggle = card.querySelector('.employment-card__toggle');
+    if (!toggle) { return; }
+
+    toggle.addEventListener('click', function () {
+      var open = card.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+
+      /* Update button label (keeps screen-reader text in sync). */
+      var labelNode = null;
+      for (var i = 0; i < toggle.childNodes.length; i += 1) {
+        var node = toggle.childNodes[i];
+        if (node.nodeType === 3 && node.textContent.trim()) {
+          labelNode = node;
+          break;
+        }
+      }
+      if (labelNode) {
+        labelNode.textContent = open
+          ? ' Hide responsibilities '
+          : ' View responsibilities ';
+      }
+    });
+  })();
+  </script>
+
+</body>
+</html>

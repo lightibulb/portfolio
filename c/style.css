@@ -1,0 +1,35 @@
+:root {
+  --bg: #05020d; --text: #f1f5ff; --text-dim: #aaa6cf; --text-faint: #8985b6;
+  --border: rgba(5,217,232,0.22); --border-strong: rgba(5,217,232,0.6); --rule: rgba(5,217,232,0.18);
+  --accent: #fcee0a; --accent-2: #ff2a6d; --accent-3: #05d9e8;
+  --surface: rgba(12,8,30,0.6); --surface-hover: rgba(24,12,52,0.85);
+  --font-display: "Space Grotesk", sans-serif; --font-sans: "JetBrains Mono", monospace; --font-mono: "JetBrains Mono", monospace;
+}
+body { background-color: var(--bg); color: var(--text); font-family: var(--font-sans); }
+h1, h2, h3, .hero__title, .section__title { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; letter-spacing: -0.02em; color: var(--accent-3); }
+.hero__title > .hero__line > span { background: none; -webkit-text-fill-color: currentColor; color: var(--text); }
+.hero__title em { color: var(--accent-2); }
+
+/* Cyber BG */
+.bg__grid { opacity: 0.14; } .bg__orb { display: none; }
+.bg__scan { display: block; opacity: 0.55; animation: scan 10s linear infinite; }
+@keyframes scan { to { background-position: 0 100px; } }
+
+/* HUD Cards */
+.card, .approach__card, .journey__card, .interest, .explore__card, .practice, .thread__card, .tech-panel, .topic, .contact-card {
+  background-color: var(--surface); border: 1px solid var(--accent-3); border-radius: 0; box-shadow: none; padding: 1.5rem; position: relative;
+}
+.card::before, .approach__card::before, .journey__card::before { content: ""; position: absolute; top: -1px; left: -1px; width: 10px; height: 10px; border-top: 1px solid var(--accent-2); border-left: 1px solid var(--accent-2); }
+.card h3, .approach__card h3, .journey__card h3 { color: var(--accent-3); font-family: var(--font-display); text-transform: uppercase; }
+.card p, .approach__card p { color: var(--text-dim); }
+
+/* Buttons */
+.btn { border-radius: 0; text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--font-mono); }
+.btn--primary { background-color: var(--accent); color: #000; border-color: var(--accent); }
+.btn--ghost { border-color: var(--accent-3); color: var(--accent-3); }
+.section__label, .hero__label { color: var(--accent); }
+.nav__theme-btn { display: inline-block; width: 22px; height: 22px; border-radius: 50%; position: relative; }
+.nav__theme-btn::before { content: ''; display: block; width: 10px; height: 10px; border-radius: 50%; position: absolute; top: 6px; left: 6px; }
+.nav__theme-btn[aria-label='Dark Theme']::before { background: #0a0a0c; border: 1px solid #fff; }
+.nav__theme-btn[aria-label='Rich Theme']::before { background: #F1EADA; border: 1px solid #1A1512; }
+.nav__theme-btn[aria-label='Cyberpunk Theme']::before { background: #05d9e8; border: 1px solid #ff2a6d; }
