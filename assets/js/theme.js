@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/theme.js
    --------------------------------------------------------------------------
    Shared theme system. Loaded in <head> on every page so the persisted
@@ -43,7 +43,7 @@
     } catch (error) { /* matchMedia unavailable */ }
   })();
 
-  var STORAGE_KEY = 'amanSohail:theme';
+  var STORAGE_KEY = 'pAman:theme';
   var ATTRIBUTE = 'data-theme';
 
   var THEMES = {

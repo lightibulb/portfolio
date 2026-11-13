@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/skills.js
    --------------------------------------------------------------------------
    Skills page: expandable cards, category filters, live counts.

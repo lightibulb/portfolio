@@ -70,10 +70,10 @@ FILE: 404.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Page not built yet — Aman Sohail</title>
-  <meta name="description" content="This page of Aman Sohail's portfolio is still being built." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Page not built yet — P. Aman</title>
+  <meta name="description" content="This page of P. Aman's portfolio is still being built." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="noindex" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
@@ -115,9 +115,9 @@ FILE: 404.html
   <!-- ─────────────────────────── NAVIGATION ─────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -150,7 +150,7 @@ FILE: 404.html
   <main id="main">
     <section class="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">404 — Aman Sohail</p>
+        <p class="hero__label">404 — P. Aman</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="hero__line"><span>Not built</span></span>
           <span class="hero__line"><span><em>yet</em><span class="hero__dot">.</span></span></span>
@@ -172,7 +172,7 @@ FILE: 404.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -215,22 +215,22 @@ FILE: about.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>About Aman Sohail — Independent Developer & Learner from Pakistan</title>
-  <meta name="description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>About P. Aman — Independent Developer & Learner from Pakistan</title>
+  <meta name="description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta property="og:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta property="og:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta name="twitter:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="twitter:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta name="twitter:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -250,13 +250,13 @@ FILE: about.html
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Aman Sohail",
+  "name": "P. Aman",
   "alternateName": [
     "Aman",
     "lightibulb"
   ],
   "jobTitle": "Independent Developer and Learner",
-  "description": "Aman Sohail is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
+  "description": "P. Aman is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "PK"
@@ -300,9 +300,9 @@ FILE: about.html
   <!-- ─────────────────────────── NAVIGATION ─────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -338,9 +338,9 @@ FILE: about.html
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Software · AI · Physics</p>
+        <p class="hero__label">P. Aman — Software · AI · Physics</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail — </span>
+          <span class="sr-only">P. Aman — </span>
           <span class="hero__line"><span>Beyond</span></span>
           <span class="hero__line"><span><em>the</em> Code<span class="hero__dot">.</span></span></span>
         </h1>
@@ -664,7 +664,7 @@ FILE: about.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -677,7 +677,7 @@ FILE: about.html
 FILE: assets/css/about.css
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/css/about.css
    --------------------------------------------------------------------------
    About-page sections only. Shared layout, navigation, hero, buttons and
@@ -1203,7 +1203,7 @@ html.js:not(.no-motion) .who__body p:first-of-type:not(.reveal-done) {
 FILE: assets/css/projects.css
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/css/projects.css
    --------------------------------------------------------------------------
    Project-specific presentations. Everything page-level (nav, hero, footer,
@@ -2485,7 +2485,7 @@ html.no-motion .eco__actual {
 FILE: assets/css/site.css
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/css/site.css
    --------------------------------------------------------------------------
    Shared styles for inner pages (about, skills, 404).
@@ -3512,7 +3512,7 @@ html[data-theme="cyberpunk"] .nav__link[aria-current="page"]::after {
 FILE: assets/css/skills.css
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/css/skills.css
    --------------------------------------------------------------------------
    Skills-page sections only. Shared layout, navigation, hero, buttons and
@@ -4161,7 +4161,7 @@ html[data-theme="cyberpunk"] {
 FILE: assets/css/themes.css.bak
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/css/themes.css
    --------------------------------------------------------------------------
    SINGLE SOURCE OF TRUTH for design tokens and the three themes.
@@ -4355,7 +4355,7 @@ html[data-theme="cyberpunk"] {
 FILE: assets/css/welcome.css
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    Module 01 :: Welcome / Theme selection
    ==========================================================================
 
@@ -5540,7 +5540,7 @@ FILE: assets/img/favicon.svg
 FILE: assets/js/projects.js
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/projects.js
    --------------------------------------------------------------------------
    Adds two enhancements on top of site.js:
@@ -5669,7 +5669,7 @@ FILE: assets/js/projects.js
 FILE: assets/js/site.js
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/site.js
    --------------------------------------------------------------------------
    Shared behaviour for inner pages (about, skills, 404). No dependencies.
@@ -5908,7 +5908,7 @@ FILE: assets/js/site.js
 FILE: assets/js/skills.js
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/skills.js
    --------------------------------------------------------------------------
    Skills page: expandable cards, category filters, live counts.
@@ -5995,7 +5995,7 @@ FILE: assets/js/skills.js
 FILE: assets/js/theme.js
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/theme.js
    --------------------------------------------------------------------------
    Shared theme system. Loaded in <head> on every page so the persisted
@@ -6039,7 +6039,7 @@ FILE: assets/js/theme.js
     } catch (error) { /* matchMedia unavailable */ }
   })();
 
-  var STORAGE_KEY = 'amanSohail:theme';
+  var STORAGE_KEY = 'pAman:theme';
   var ATTRIBUTE = 'data-theme';
 
   var THEMES = {
@@ -6188,7 +6188,7 @@ FILE: assets/js/theme.js
 FILE: assets/js/welcome.js
 =======================================================================
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/welcome.js
    --------------------------------------------------------------------------
    Module 01 behaviour: loader sequence, entrance reveal, theme selection,
@@ -6311,8 +6311,8 @@ FILE: assets/js/welcome.js
       /* The full loader plays once per browser session. */
       var seen = false;
       try {
-        seen = window.sessionStorage.getItem('amanSohail:loaded') === '1';
-        window.sessionStorage.setItem('amanSohail:loaded', '1');
+        seen = window.sessionStorage.getItem('pAman:loaded') === '1';
+        window.sessionStorage.setItem('pAman:loaded', '1');
       } catch (error) { /* storage unavailable */ }
 
       if (!motionOK || seen) {
@@ -6837,22 +6837,22 @@ FILE: c/about.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>About Aman Sohail — Independent Developer & Learner from Pakistan</title>
-  <meta name="description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>About P. Aman — Independent Developer & Learner from Pakistan</title>
+  <meta name="description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta property="og:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta property="og:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta name="twitter:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="twitter:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta name="twitter:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -6872,13 +6872,13 @@ FILE: c/about.html
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Aman Sohail",
+  "name": "P. Aman",
   "alternateName": [
     "Aman",
     "lightibulb"
   ],
   "jobTitle": "Independent Developer and Learner",
-  "description": "Aman Sohail is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
+  "description": "P. Aman is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "PK"
@@ -6923,9 +6923,9 @@ FILE: c/about.html
   <!-- ─────────────────────────── NAVIGATION ─────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -6961,9 +6961,9 @@ FILE: c/about.html
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Software · AI · Physics</p>
+        <p class="hero__label">P. Aman — Software · AI · Physics</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail — </span>
+          <span class="sr-only">P. Aman — </span>
           <span class="hero__line"><span>Beyond</span></span>
           <span class="hero__line"><span><em>the</em> Code<span class="hero__dot">.</span></span></span>
         </h1>
@@ -7287,7 +7287,7 @@ FILE: c/about.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -7304,22 +7304,22 @@ FILE: c/contact.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Contact — Aman Sohail</title>
-  <meta name="description" content="Contact Aman Sohail — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
-  <meta name="keywords" content="Aman Sohail contact, Aman Sohail email, Aman Sohail WhatsApp, Aman Sohail LinkedIn, Aman Sohail GitHub, lightibulb, contact developer Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Contact — P. Aman</title>
+  <meta name="description" content="Contact P. Aman — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
+  <meta name="keywords" content="P. Aman contact, P. Aman email, P. Aman WhatsApp, P. Aman LinkedIn, P. Aman GitHub, lightibulb, contact developer Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Contact — Aman Sohail" />
-  <meta property="og:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Contact — P. Aman" />
+  <meta property="og:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Contact — Aman Sohail" />
-  <meta name="twitter:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta name="twitter:title" content="Contact — P. Aman" />
+  <meta name="twitter:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -8203,9 +8203,9 @@ html[data-theme="cyberpunk"] .availability__text {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -8273,7 +8273,7 @@ html[data-theme="cyberpunk"] .availability__text {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Contact</p>
+        <p class="hero__label">P. Aman — Contact</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Let's connect. </span>
           <span class="hero__line"><span>Let's</span></span>
@@ -8649,7 +8649,7 @@ html[data-theme="cyberpunk"] .availability__text {
   <footer class="footer footer--contact">
     <div class="footer-cols">
       <div>
-        <p class="footer-col__brand">Aman Sohail</p>
+        <p class="footer-col__brand">P. Aman</p>
         <p class="footer-col__tag">Developer Portfolio</p>
         <p class="footer-col__motto">Your experience. Your choice.</p>
       </div>
@@ -8690,7 +8690,7 @@ html[data-theme="cyberpunk"] .availability__text {
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="footerYear">2026</span> Aman Sohail — Built in the open</span>
+      <span>© <span id="footerYear">2026</span> P. Aman — Built in the open</span>
       <a href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -9015,22 +9015,22 @@ FILE: c/experience.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Experience &amp; Journey — Aman Sohail</title>
-  <meta name="description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
-  <meta name="keywords" content="Aman Sohail experience, Aman Sohail SNGPL, Aman Sohail developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Experience &amp; Journey — P. Aman</title>
+  <meta name="description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
+  <meta name="keywords" content="P. Aman experience, P. Aman SNGPL, P. Aman developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta property="og:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Experience &amp; Journey — P. Aman" />
+  <meta property="og:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta name="twitter:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta name="twitter:title" content="Experience &amp; Journey — P. Aman" />
+  <meta name="twitter:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -10038,9 +10038,9 @@ html[data-theme="cyberpunk"] .career__note {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -10083,7 +10083,7 @@ html[data-theme="cyberpunk"] .career__note {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Experience</p>
+        <p class="hero__label">P. Aman — Experience</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Experience and journey: </span>
           <span class="hero__line"><span>Experience</span></span>
@@ -10549,7 +10549,7 @@ html[data-theme="cyberpunk"] .career__note {
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -10605,22 +10605,22 @@ FILE: c/projects.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Projects — Aman Sohail</title>
-  <meta name="description" content="Four projects by Aman Sohail: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
-  <meta name="keywords" content="Aman Sohail projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Projects — P. Aman</title>
+  <meta name="description" content="Four projects by P. Aman: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
+  <meta name="keywords" content="P. Aman projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Projects — Aman Sohail" />
-  <meta property="og:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Projects — P. Aman" />
+  <meta property="og:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Projects — Aman Sohail" />
-  <meta name="twitter:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta name="twitter:title" content="Projects — P. Aman" />
+  <meta name="twitter:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -10660,9 +10660,9 @@ FILE: c/projects.html
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -10697,9 +10697,9 @@ FILE: c/projects.html
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Projects</p>
+        <p class="hero__label">P. Aman — Projects</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail's projects: </span>
+          <span class="sr-only">P. Aman's projects: </span>
           <span class="hero__line"><span>Four projects</span></span>
           <span class="hero__line"><span>in motion<span class="hero__dot">.</span></span></span>
         </h1>
@@ -11329,7 +11329,7 @@ FILE: c/projects.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -11348,22 +11348,22 @@ FILE: c/skills.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Skills & Technologies — Aman Sohail</title>
-  <meta name="description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Skills & Technologies — P. Aman</title>
+  <meta name="description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Skills & Technologies — Aman Sohail" />
-  <meta property="og:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Skills & Technologies — P. Aman" />
+  <meta property="og:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Skills & Technologies — Aman Sohail" />
-  <meta name="twitter:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="twitter:title" content="Skills & Technologies — P. Aman" />
+  <meta name="twitter:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -11404,9 +11404,9 @@ FILE: c/skills.html
   <!-- ─────────────────── NAVIGATION ─────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -11451,9 +11451,9 @@ FILE: c/skills.html
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Skills &amp; Tools</p>
+        <p class="hero__label">P. Aman — Skills &amp; Tools</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail: </span>
+          <span class="sr-only">P. Aman: </span>
           <span class="hero__line"><span>Skills &amp;</span></span>
           <span class="hero__line"><span>Technologies<span class="hero__dot">.</span></span></span>
         </h1>
@@ -12035,7 +12035,7 @@ FILE: c/skills.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -12093,22 +12093,22 @@ FILE: contact.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Contact — Aman Sohail</title>
-  <meta name="description" content="Contact Aman Sohail — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
-  <meta name="keywords" content="Aman Sohail contact, Aman Sohail email, Aman Sohail WhatsApp, Aman Sohail LinkedIn, Aman Sohail GitHub, lightibulb, contact developer Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Contact — P. Aman</title>
+  <meta name="description" content="Contact P. Aman — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
+  <meta name="keywords" content="P. Aman contact, P. Aman email, P. Aman WhatsApp, P. Aman LinkedIn, P. Aman GitHub, lightibulb, contact developer Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Contact — Aman Sohail" />
-  <meta property="og:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Contact — P. Aman" />
+  <meta property="og:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Contact — Aman Sohail" />
-  <meta name="twitter:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta name="twitter:title" content="Contact — P. Aman" />
+  <meta name="twitter:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -12991,9 +12991,9 @@ html[data-theme="cyberpunk"] .availability__text {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -13061,7 +13061,7 @@ html[data-theme="cyberpunk"] .availability__text {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Contact</p>
+        <p class="hero__label">P. Aman — Contact</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Let's connect. </span>
           <span class="hero__line"><span>Let's</span></span>
@@ -13437,7 +13437,7 @@ html[data-theme="cyberpunk"] .availability__text {
   <footer class="footer footer--contact">
     <div class="footer-cols">
       <div>
-        <p class="footer-col__brand">Aman Sohail</p>
+        <p class="footer-col__brand">P. Aman</p>
         <p class="footer-col__tag">Developer Portfolio</p>
         <p class="footer-col__motto">Your experience. Your choice.</p>
       </div>
@@ -13478,7 +13478,7 @@ html[data-theme="cyberpunk"] .availability__text {
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="footerYear">2026</span> Aman Sohail — Built in the open</span>
+      <span>© <span id="footerYear">2026</span> P. Aman — Built in the open</span>
       <a href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -13803,22 +13803,22 @@ FILE: d/about.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>About Aman Sohail — Independent Developer & Learner from Pakistan</title>
-  <meta name="description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>About P. Aman — Independent Developer & Learner from Pakistan</title>
+  <meta name="description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta property="og:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta property="og:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta name="twitter:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="twitter:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta name="twitter:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -13838,13 +13838,13 @@ FILE: d/about.html
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Aman Sohail",
+  "name": "P. Aman",
   "alternateName": [
     "Aman",
     "lightibulb"
   ],
   "jobTitle": "Independent Developer and Learner",
-  "description": "Aman Sohail is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
+  "description": "P. Aman is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "PK"
@@ -13889,9 +13889,9 @@ FILE: d/about.html
   <!-- ─────────────────────────── NAVIGATION ─────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -13927,9 +13927,9 @@ FILE: d/about.html
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Software · AI · Physics</p>
+        <p class="hero__label">P. Aman — Software · AI · Physics</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail — </span>
+          <span class="sr-only">P. Aman — </span>
           <span class="hero__line"><span>Beyond</span></span>
           <span class="hero__line"><span><em>the</em> Code<span class="hero__dot">.</span></span></span>
         </h1>
@@ -14253,7 +14253,7 @@ FILE: d/about.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -14270,22 +14270,22 @@ FILE: d/contact.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Contact — Aman Sohail</title>
-  <meta name="description" content="Contact Aman Sohail — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
-  <meta name="keywords" content="Aman Sohail contact, Aman Sohail email, Aman Sohail WhatsApp, Aman Sohail LinkedIn, Aman Sohail GitHub, lightibulb, contact developer Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Contact — P. Aman</title>
+  <meta name="description" content="Contact P. Aman — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
+  <meta name="keywords" content="P. Aman contact, P. Aman email, P. Aman WhatsApp, P. Aman LinkedIn, P. Aman GitHub, lightibulb, contact developer Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Contact — Aman Sohail" />
-  <meta property="og:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Contact — P. Aman" />
+  <meta property="og:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Contact — Aman Sohail" />
-  <meta name="twitter:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta name="twitter:title" content="Contact — P. Aman" />
+  <meta name="twitter:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -15169,9 +15169,9 @@ html[data-theme="cyberpunk"] .availability__text {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -15239,7 +15239,7 @@ html[data-theme="cyberpunk"] .availability__text {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Contact</p>
+        <p class="hero__label">P. Aman — Contact</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Let's connect. </span>
           <span class="hero__line"><span>Let's</span></span>
@@ -15615,7 +15615,7 @@ html[data-theme="cyberpunk"] .availability__text {
   <footer class="footer footer--contact">
     <div class="footer-cols">
       <div>
-        <p class="footer-col__brand">Aman Sohail</p>
+        <p class="footer-col__brand">P. Aman</p>
         <p class="footer-col__tag">Developer Portfolio</p>
         <p class="footer-col__motto">Your experience. Your choice.</p>
       </div>
@@ -15656,7 +15656,7 @@ html[data-theme="cyberpunk"] .availability__text {
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="footerYear">2026</span> Aman Sohail — Built in the open</span>
+      <span>© <span id="footerYear">2026</span> P. Aman — Built in the open</span>
       <a href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -15981,22 +15981,22 @@ FILE: d/experience.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Experience &amp; Journey — Aman Sohail</title>
-  <meta name="description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
-  <meta name="keywords" content="Aman Sohail experience, Aman Sohail SNGPL, Aman Sohail developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Experience &amp; Journey — P. Aman</title>
+  <meta name="description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
+  <meta name="keywords" content="P. Aman experience, P. Aman SNGPL, P. Aman developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta property="og:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Experience &amp; Journey — P. Aman" />
+  <meta property="og:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta name="twitter:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta name="twitter:title" content="Experience &amp; Journey — P. Aman" />
+  <meta name="twitter:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -17004,9 +17004,9 @@ html[data-theme="cyberpunk"] .career__note {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -17049,7 +17049,7 @@ html[data-theme="cyberpunk"] .career__note {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Experience</p>
+        <p class="hero__label">P. Aman — Experience</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Experience and journey: </span>
           <span class="hero__line"><span>Experience</span></span>
@@ -17515,7 +17515,7 @@ html[data-theme="cyberpunk"] .career__note {
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -17571,22 +17571,22 @@ FILE: d/projects.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Projects — Aman Sohail</title>
-  <meta name="description" content="Four projects by Aman Sohail: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
-  <meta name="keywords" content="Aman Sohail projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Projects — P. Aman</title>
+  <meta name="description" content="Four projects by P. Aman: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
+  <meta name="keywords" content="P. Aman projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Projects — Aman Sohail" />
-  <meta property="og:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Projects — P. Aman" />
+  <meta property="og:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Projects — Aman Sohail" />
-  <meta name="twitter:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta name="twitter:title" content="Projects — P. Aman" />
+  <meta name="twitter:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -17626,9 +17626,9 @@ FILE: d/projects.html
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -17663,9 +17663,9 @@ FILE: d/projects.html
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Projects</p>
+        <p class="hero__label">P. Aman — Projects</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail's projects: </span>
+          <span class="sr-only">P. Aman's projects: </span>
           <span class="hero__line"><span>Four projects</span></span>
           <span class="hero__line"><span>in motion<span class="hero__dot">.</span></span></span>
         </h1>
@@ -18295,7 +18295,7 @@ FILE: d/projects.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -18314,22 +18314,22 @@ FILE: d/skills.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Skills & Technologies — Aman Sohail</title>
-  <meta name="description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Skills & Technologies — P. Aman</title>
+  <meta name="description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Skills & Technologies — Aman Sohail" />
-  <meta property="og:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Skills & Technologies — P. Aman" />
+  <meta property="og:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Skills & Technologies — Aman Sohail" />
-  <meta name="twitter:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="twitter:title" content="Skills & Technologies — P. Aman" />
+  <meta name="twitter:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -18370,9 +18370,9 @@ FILE: d/skills.html
   <!-- ─────────────────── NAVIGATION ─────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -18417,9 +18417,9 @@ FILE: d/skills.html
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Skills &amp; Tools</p>
+        <p class="hero__label">P. Aman — Skills &amp; Tools</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail: </span>
+          <span class="sr-only">P. Aman: </span>
           <span class="hero__line"><span>Skills &amp;</span></span>
           <span class="hero__line"><span>Technologies<span class="hero__dot">.</span></span></span>
         </h1>
@@ -19001,7 +19001,7 @@ FILE: d/skills.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -19043,22 +19043,22 @@ FILE: experience.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Experience &amp; Journey — Aman Sohail</title>
-  <meta name="description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
-  <meta name="keywords" content="Aman Sohail experience, Aman Sohail SNGPL, Aman Sohail developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Experience &amp; Journey — P. Aman</title>
+  <meta name="description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
+  <meta name="keywords" content="P. Aman experience, P. Aman SNGPL, P. Aman developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta property="og:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Experience &amp; Journey — P. Aman" />
+  <meta property="og:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta name="twitter:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta name="twitter:title" content="Experience &amp; Journey — P. Aman" />
+  <meta name="twitter:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -20065,9 +20065,9 @@ html[data-theme="cyberpunk"] .career__note {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -20110,7 +20110,7 @@ html[data-theme="cyberpunk"] .career__note {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Experience</p>
+        <p class="hero__label">P. Aman — Experience</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Experience and journey: </span>
           <span class="hero__line"><span>Experience</span></span>
@@ -20576,7 +20576,7 @@ html[data-theme="cyberpunk"] .career__note {
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -20838,22 +20838,22 @@ FILE: index.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Aman Sohail — Developer Portfolio | AI, Software & Open Source</title>
-  <meta name="description" content="Aman Sohail is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>P. Aman — Developer Portfolio | AI, Software & Open Source</title>
+  <meta name="description" content="P. Aman is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Aman Sohail — Developer Portfolio | AI, Software & Open Source" />
-  <meta property="og:description" content="Aman Sohail is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="P. Aman — Developer Portfolio | AI, Software & Open Source" />
+  <meta property="og:description" content="P. Aman is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Aman Sohail — Developer Portfolio | AI, Software & Open Source" />
-  <meta name="twitter:description" content="Aman Sohail is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
+  <meta name="twitter:title" content="P. Aman — Developer Portfolio | AI, Software & Open Source" />
+  <meta name="twitter:description" content="P. Aman is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -20872,13 +20872,13 @@ FILE: index.html
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Aman Sohail",
+  "name": "P. Aman",
   "alternateName": [
     "Aman",
     "lightibulb"
   ],
   "jobTitle": "Independent Developer and Learner",
-  "description": "Aman Sohail is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app.",
+  "description": "P. Aman is an independent developer and learner from Pakistan building software, exploring AI, cybersecurity and physics. Explore his portfolio, projects and the open-source CleanForge app.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "PK"
@@ -20901,12 +20901,12 @@ FILE: index.html
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Aman Sohail — Portfolio",
-  "alternateName": "Aman Sohail",
+  "name": "P. Aman — Portfolio",
+  "alternateName": "P. Aman",
   "inLanguage": "en",
   "author": {
     "@type": "Person",
-    "name": "Aman Sohail"
+    "name": "P. Aman"
   }
 }
   </script>
@@ -20933,7 +20933,7 @@ FILE: index.html
   <!-- ───────────────────────────── LOADER ───────────────────────────── -->
   <div class="loader" id="loader">
     <div class="loader__inner">
-      <p class="loader__mark">AMAN&nbsp;SOHAIL</p>
+      <p class="loader__mark">P.&nbsp;AMAN</p>
       <div class="loader__track"><span class="loader__fill"></span></div>
       <p class="loader__pct"><span>00</span></p>
     </div>
@@ -20947,9 +20947,9 @@ FILE: index.html
   <div class="page" id="page">
 
     <header class="topbar">
-      <a class="brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="brand__mark">AS</span>
-        <span class="brand__name">Aman Sohail</span>
+      <a class="brand" href="index.html" aria-label="P. Aman — home">
+        <span class="brand__mark">PA</span>
+        <span class="brand__name">P. Aman</span>
       </a>
       <p class="topbar__meta"><span class="topbar__dot"></span>Portfolio / v1.0</p>
     </header>
@@ -20958,7 +20958,7 @@ FILE: index.html
 
       <section class="intro" aria-labelledby="welcomeTitle">
         <p class="intro__eyebrow" data-anim>Interface preferences</p>
-        <h1 class="intro__title" id="welcomeTitle" data-anim>Welcome<span class="intro__dot">.</span><span class="sr-only"> to the portfolio of Aman Sohail</span></h1>
+        <h1 class="intro__title" id="welcomeTitle" data-anim>Welcome<span class="intro__dot">.</span><span class="sr-only"> to the portfolio of P. Aman</span></h1>
         <h2 class="intro__sub" data-anim>Choose your experience.</h2>
         <p class="intro__lede" data-anim>
           Explore my digital space in a visual environment that feels right to you.
@@ -21097,22 +21097,22 @@ FILE: projects.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Projects — Aman Sohail</title>
-  <meta name="description" content="Four projects by Aman Sohail: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
-  <meta name="keywords" content="Aman Sohail projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Projects — P. Aman</title>
+  <meta name="description" content="Four projects by P. Aman: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
+  <meta name="keywords" content="P. Aman projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Projects — Aman Sohail" />
-  <meta property="og:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Projects — P. Aman" />
+  <meta property="og:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Projects — Aman Sohail" />
-  <meta name="twitter:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta name="twitter:title" content="Projects — P. Aman" />
+  <meta name="twitter:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -21151,9 +21151,9 @@ FILE: projects.html
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -21188,9 +21188,9 @@ FILE: projects.html
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Projects</p>
+        <p class="hero__label">P. Aman — Projects</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail's projects: </span>
+          <span class="sr-only">P. Aman's projects: </span>
           <span class="hero__line"><span>Four projects</span></span>
           <span class="hero__line"><span>in motion<span class="hero__dot">.</span></span></span>
         </h1>
@@ -21820,7 +21820,7 @@ FILE: projects.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -21839,22 +21839,22 @@ FILE: r/about.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>About Aman Sohail — Independent Developer & Learner from Pakistan</title>
-  <meta name="description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>About P. Aman — Independent Developer & Learner from Pakistan</title>
+  <meta name="description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta property="og:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta property="og:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About Aman Sohail — Independent Developer & Learner from Pakistan" />
-  <meta name="twitter:description" content="About Aman Sohail — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
+  <meta name="twitter:title" content="About P. Aman — Independent Developer & Learner from Pakistan" />
+  <meta name="twitter:description" content="About P. Aman — an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -21874,13 +21874,13 @@ FILE: r/about.html
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Aman Sohail",
+  "name": "P. Aman",
   "alternateName": [
     "Aman",
     "lightibulb"
   ],
   "jobTitle": "Independent Developer and Learner",
-  "description": "Aman Sohail is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
+  "description": "P. Aman is an independent learner and developer from Pakistan exploring AI, software engineering, cybersecurity and physics. Creator of the open-source Android project CleanForge.",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "PK"
@@ -21925,9 +21925,9 @@ FILE: r/about.html
   <!-- ─────────────────────────── NAVIGATION ─────────────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -21963,9 +21963,9 @@ FILE: r/about.html
     <!-- ============ HERO ============ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Software · AI · Physics</p>
+        <p class="hero__label">P. Aman — Software · AI · Physics</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail — </span>
+          <span class="sr-only">P. Aman — </span>
           <span class="hero__line"><span>Beyond</span></span>
           <span class="hero__line"><span><em>the</em> Code<span class="hero__dot">.</span></span></span>
         </h1>
@@ -22289,7 +22289,7 @@ FILE: r/about.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -22306,22 +22306,22 @@ FILE: r/contact.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Contact — Aman Sohail</title>
-  <meta name="description" content="Contact Aman Sohail — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
-  <meta name="keywords" content="Aman Sohail contact, Aman Sohail email, Aman Sohail WhatsApp, Aman Sohail LinkedIn, Aman Sohail GitHub, lightibulb, contact developer Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Contact — P. Aman</title>
+  <meta name="description" content="Contact P. Aman — email, WhatsApp, LinkedIn, GitHub and Instagram. Development opportunities, technical collaborations and general conversations." />
+  <meta name="keywords" content="P. Aman contact, P. Aman email, P. Aman WhatsApp, P. Aman LinkedIn, P. Aman GitHub, lightibulb, contact developer Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Contact — Aman Sohail" />
-  <meta property="og:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Contact — P. Aman" />
+  <meta property="og:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Contact — Aman Sohail" />
-  <meta name="twitter:description" content="Contact Aman Sohail — development opportunities, collaborations and technical conversations." />
+  <meta name="twitter:title" content="Contact — P. Aman" />
+  <meta name="twitter:description" content="Contact P. Aman — development opportunities, collaborations and technical conversations." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -23205,9 +23205,9 @@ html[data-theme="cyberpunk"] .availability__text {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -23275,7 +23275,7 @@ html[data-theme="cyberpunk"] .availability__text {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Contact</p>
+        <p class="hero__label">P. Aman — Contact</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Let's connect. </span>
           <span class="hero__line"><span>Let's</span></span>
@@ -23651,7 +23651,7 @@ html[data-theme="cyberpunk"] .availability__text {
   <footer class="footer footer--contact">
     <div class="footer-cols">
       <div>
-        <p class="footer-col__brand">Aman Sohail</p>
+        <p class="footer-col__brand">P. Aman</p>
         <p class="footer-col__tag">Developer Portfolio</p>
         <p class="footer-col__motto">Your experience. Your choice.</p>
       </div>
@@ -23692,7 +23692,7 @@ html[data-theme="cyberpunk"] .availability__text {
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="footerYear">2026</span> Aman Sohail — Built in the open</span>
+      <span>© <span id="footerYear">2026</span> P. Aman — Built in the open</span>
       <a href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -24017,22 +24017,22 @@ FILE: r/experience.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Experience &amp; Journey — Aman Sohail</title>
-  <meta name="description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
-  <meta name="keywords" content="Aman Sohail experience, Aman Sohail SNGPL, Aman Sohail developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Experience &amp; Journey — P. Aman</title>
+  <meta name="description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development (EcoFac, CleanForge, RELY, Living Prayer) and continuous technical learning." />
+  <meta name="keywords" content="P. Aman experience, P. Aman SNGPL, P. Aman developer journey, lightibulb, independent developer Pakistan, EcoFac CleanForge RELY Living Prayer" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="profile" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta property="og:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Experience &amp; Journey — P. Aman" />
+  <meta property="og:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Experience &amp; Journey — Aman Sohail" />
-  <meta name="twitter:description" content="Aman Sohail's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
+  <meta name="twitter:title" content="Experience &amp; Journey — P. Aman" />
+  <meta name="twitter:description" content="P. Aman's experience: SNGPL Project Office (casual worker), independent software development and continuous technical learning." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -25040,9 +25040,9 @@ html[data-theme="cyberpunk"] .career__note {
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -25085,7 +25085,7 @@ html[data-theme="cyberpunk"] .career__note {
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Experience</p>
+        <p class="hero__label">P. Aman — Experience</p>
         <h1 class="hero__title" id="heroTitle">
           <span class="sr-only">Experience and journey: </span>
           <span class="hero__line"><span>Experience</span></span>
@@ -25551,7 +25551,7 @@ html[data-theme="cyberpunk"] .career__note {
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -25607,22 +25607,22 @@ FILE: r/projects.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Projects — Aman Sohail</title>
-  <meta name="description" content="Four projects by Aman Sohail: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
-  <meta name="keywords" content="Aman Sohail projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Projects — P. Aman</title>
+  <meta name="description" content="Four projects by P. Aman: EcoFac (energy intelligence), CleanForge (Android storage analyzer), RELY (pixel music player) and Living Prayer (personal web project)." />
+  <meta name="keywords" content="P. Aman projects, EcoFac, CleanForge, RELY, Living Prayer, lightibulb, Android open source, energy intelligence, FastAPI" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Projects — Aman Sohail" />
-  <meta property="og:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Projects — P. Aman" />
+  <meta property="og:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Projects — Aman Sohail" />
-  <meta name="twitter:description" content="Four projects by Aman Sohail: EcoFac, CleanForge, RELY and Living Prayer." />
+  <meta name="twitter:title" content="Projects — P. Aman" />
+  <meta name="twitter:description" content="Four projects by P. Aman: EcoFac, CleanForge, RELY and Living Prayer." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -25662,9 +25662,9 @@ FILE: r/projects.html
   <!-- Navigation -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -25699,9 +25699,9 @@ FILE: r/projects.html
     <!-- ═══════════════════════ HERO ═══════════════════════ -->
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Projects</p>
+        <p class="hero__label">P. Aman — Projects</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail's projects: </span>
+          <span class="sr-only">P. Aman's projects: </span>
           <span class="hero__line"><span>Four projects</span></span>
           <span class="hero__line"><span>in motion<span class="hero__dot">.</span></span></span>
         </h1>
@@ -26331,7 +26331,7 @@ FILE: r/projects.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -26350,22 +26350,22 @@ FILE: r/skills.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Skills & Technologies — Aman Sohail</title>
-  <meta name="description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Skills & Technologies — P. Aman</title>
+  <meta name="description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Skills & Technologies — Aman Sohail" />
-  <meta property="og:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Skills & Technologies — P. Aman" />
+  <meta property="og:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Skills & Technologies — Aman Sohail" />
-  <meta name="twitter:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="twitter:title" content="Skills & Technologies — P. Aman" />
+  <meta name="twitter:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
 
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
 
@@ -26406,9 +26406,9 @@ FILE: r/skills.html
   <!-- ─────────────────── NAVIGATION ─────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="../index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="../index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -26453,9 +26453,9 @@ FILE: r/skills.html
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Skills &amp; Tools</p>
+        <p class="hero__label">P. Aman — Skills &amp; Tools</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail: </span>
+          <span class="sr-only">P. Aman: </span>
           <span class="hero__line"><span>Skills &amp;</span></span>
           <span class="hero__line"><span>Technologies<span class="hero__dot">.</span></span></span>
         </h1>
@@ -27037,7 +27037,7 @@ FILE: r/skills.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>
@@ -27127,22 +27127,22 @@ FILE: skills.html
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Skills & Technologies — Aman Sohail</title>
-  <meta name="description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
-  <meta name="keywords" content="Aman Sohail, Aman Sohail portfolio, Aman Sohail developer, Aman Sohail Pakistan, Aman Sohail software developer, Aman Sohail CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
-  <meta name="author" content="Aman Sohail" />
+  <title>Skills & Technologies — P. Aman</title>
+  <meta name="description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="keywords" content="P. Aman, P. Aman portfolio, P. Aman developer, P. Aman Pakistan, P. Aman software developer, P. Aman CleanForge, lightibulb, independent developer Pakistan, AI and software portfolio, ICS student Pakistan" />
+  <meta name="author" content="P. Aman" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0a0a0c" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Aman Sohail" />
-  <meta property="og:title" content="Skills & Technologies — Aman Sohail" />
-  <meta property="og:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta property="og:site_name" content="P. Aman" />
+  <meta property="og:title" content="Skills & Technologies — P. Aman" />
+  <meta property="og:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
   <meta property="og:locale" content="en_US" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Skills & Technologies — Aman Sohail" />
-  <meta name="twitter:description" content="Skills, tools and technologies Aman Sohail is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
+  <meta name="twitter:title" content="Skills & Technologies — P. Aman" />
+  <meta name="twitter:description" content="Skills, tools and technologies P. Aman is learning, applying and exploring: programming, AI, cybersecurity, Android and web development — honestly levelled." />
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
 
@@ -27182,9 +27182,9 @@ FILE: skills.html
   <!-- ─────────────────── NAVIGATION ─────────────────── -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a class="nav__brand" href="index.html" aria-label="Aman Sohail — home">
-        <span class="nav__mark">AS</span>
-        <span class="nav__name">Aman Sohail</span>
+      <a class="nav__brand" href="index.html" aria-label="P. Aman — home">
+        <span class="nav__mark">PA</span>
+        <span class="nav__name">P. Aman</span>
       </a>
 
       <nav aria-label="Primary">
@@ -27229,9 +27229,9 @@ FILE: skills.html
       </div>
 
       <div class="hero__inner">
-        <p class="hero__label">Aman Sohail — Skills &amp; Tools</p>
+        <p class="hero__label">P. Aman — Skills &amp; Tools</p>
         <h1 class="hero__title" id="heroTitle">
-          <span class="sr-only">Aman Sohail: </span>
+          <span class="sr-only">P. Aman: </span>
           <span class="hero__line"><span>Skills &amp;</span></span>
           <span class="hero__line"><span>Technologies<span class="hero__dot">.</span></span></span>
         </h1>
@@ -27813,7 +27813,7 @@ FILE: skills.html
   <footer class="footer">
     <div class="footer__inner">
       <p class="footer__motto">Your experience. Your choice.</p>
-      <p class="footer__meta">© Aman Sohail — Built in the open</p>
+      <p class="footer__meta">© P. Aman — Built in the open</p>
       <a class="footer__top" href="#hero">Back to top ↑</a>
     </div>
   </footer>

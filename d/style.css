@@ -1,25 +1,8 @@
 
-:root {
-  --bg: #0a0a0c; --bg-soft: #101013; --text: #f2efea; --text-dim: #96938f; --text-faint: #63615f;
-  --border: rgba(255,255,255,0.09); --border-strong: rgba(255,255,255,0.2); --rule: rgba(255,255,255,0.08);
-  --accent: #e8e2d9; --accent-2: #c9a87c; --accent-3: #e8e2d9; --accent-soft: rgba(232,226,217,0.14); --accent-contrast: #0a0a0c;
-  --surface: rgba(255,255,255,0.022); --surface-hover: rgba(255,255,255,0.05);
-  --grid-color: #ffffff; --grid-opacity: 0.024; --orb-1: rgba(232,226,217,0.07); --orb-2: rgba(150,160,180,0.05); --orb-3: rgba(255,255,255,0.03);
-  --scan-color: transparent; --scan-opacity: 0; --vignette: rgba(0,0,0,0.55); --nav-bg: rgba(10,10,12,0.72);
-  --card-bg: rgba(255,255,255,0.022); --card-bg-hover: rgba(255,255,255,0.05); --card-border: rgba(255,255,255,0.08); --card-shadow: 0 30px 70px -40px rgba(0,0,0,0.95); --dock-bg: rgba(16,16,19,0.76);
-  --gradient-text: none; --lift-shadow: 0 24px 60px -34px rgba(0,0,0,0.9); --btn-glow: 0 16px 40px -16px var(--accent); --glow-text: none;
-  
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-sans: "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-  --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+body { background-color: #0a0a0c !important; color: #f2efea !important; font-family: "Inter", sans-serif !important; }
+h1, h2, h3, .hero__title { font-family: "Instrument Serif", Georgia, serif !important; font-weight: 400 !important; }
+.bg__grid { opacity: 0.024 !important; } .bg__orb { display: block !important; } .bg__scan { display: none !important; }
+.bg__shape { display: none !important; }
+.card, .approach__card, .journey__card, .interest, .explore__card, .practice, .thread__card, .tech-panel, .topic, .contact-card { 
+  background: rgba(255,255,255,0.02) !important; border: 1px solid rgba(255,255,255,0.09) !important; border-radius: 12px !important; box-shadow: none !important;
 }
-body { background-color: var(--bg); color: var(--text); font-family: var(--font-sans); }
-h1, h2, h3, .hero__title, .section__title { font-family: var(--font-display); font-weight: 400; color: var(--text); }
-.nav__theme-btn { display: inline-block; width: 22px; height: 22px; border-radius: 50%; position: relative; }
-.nav__theme-btn::before { content: ''; display: block; width: 10px; height: 10px; border-radius: 50%; position: absolute; top: 6px; left: 6px; }
-.nav__theme-btn[aria-label='Dark Theme']::before { background: #0a0a0c; border: 1px solid #fff; }
-.nav__theme-btn[aria-label='Rich Theme']::before { background: #F1EADA; border: 1px solid #1A1512; }
-.nav__theme-btn[aria-label='Cyberpunk Theme']::before { background: #05d9e8; border: 1px solid #ff2a6d; }

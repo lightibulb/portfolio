@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/site.js
    --------------------------------------------------------------------------
    Shared behaviour for inner pages (about, skills, 404). No dependencies.

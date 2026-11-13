@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Aman Sohail — Portfolio
+   P. Aman — Portfolio
    assets/js/projects.js
    --------------------------------------------------------------------------
    Adds two enhancements on top of site.js:
